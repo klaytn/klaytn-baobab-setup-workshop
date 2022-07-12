@@ -2,68 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/cco-onboarding-baobab/10_prerequisites/10_firewall_configuration.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/10_prerequisites/10_firewall_configuration.html</loc>
     <lastmod>2022-07-11T19:18:45+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/50_start_services/10_start_klaytn_service.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/50_start_services/10_start_klaytn_service.html</loc>
     <lastmod>2022-07-11T18:37:31+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/40_configure_network/10_prepare_genesis_for_baobab.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/40_configure_network/10_prepare_genesis_for_baobab.html</loc>
     <lastmod>2022-07-11T17:10:58+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/30_download_chaindata/10_download_chaindata.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/30_download_chaindata/10_download_chaindata.html</loc>
     <lastmod>2022-07-11T15:42:53+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/20_network_reset/10_stop_klaytn.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/20_network_reset/10_stop_klaytn.html</loc>
     <lastmod>2022-07-11T15:16:17+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/10_prerequisites.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/10_prerequisites.html</loc>
     <lastmod>2022-07-11T10:17:42+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/10_prerequisites/20_package_installation.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/10_prerequisites/20_package_installation.html</loc>
     <lastmod>2022-07-11T19:18:57+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/50_start_services/20_start_telegraf_service.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/50_start_services/20_start_telegraf_service.html</loc>
     <lastmod>2022-07-11T18:39:03+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/40_configure_network/20_node_configuration.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/40_configure_network/20_node_configuration.html</loc>
     <lastmod>2022-07-11T17:55:05+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/30_download_chaindata/20_unarchive_chaindata.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/30_download_chaindata/20_unarchive_chaindata.html</loc>
     <lastmod>2022-07-11T15:43:06+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/20_network_reset/20_stop_telegraf.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/20_network_reset/20_stop_telegraf.html</loc>
     <lastmod>2022-07-11T15:16:34+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/20_network_reset.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/20_network_reset.html</loc>
     <lastmod>2022-07-11T10:24:36+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/50_start_services/30_check_monitoring_dashboard.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/50_start_services/30_check_monitoring_dashboard.html</loc>
     <lastmod>2022-07-11T18:42:35+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/40_configure_network/30_node_initialization.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/40_configure_network/30_node_initialization.html</loc>
     <lastmod>2022-07-11T17:23:03+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/20_network_reset/30_remove_data_and_log.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/20_network_reset/30_remove_data_and_log.html</loc>
     <lastmod>2022-07-11T15:17:04+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/30_download_chaindata.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/30_download_chaindata.html</loc>
     <lastmod>2022-07-11T10:25:05+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/40_configure_network.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/40_configure_network.html</loc>
     <lastmod>2022-07-11T10:25:55+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/50_start_services.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/50_start_services.html</loc>
     <lastmod>2022-07-11T18:26:28+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/60_conclusion.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/60_conclusion.html</loc>
     <lastmod>2022-07-11T18:51:05+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/</loc>
+    <loc>/klaytn-baobab-setup-workshop/</loc>
     <lastmod>2022-07-11T10:01:37+09:00</lastmod>
   </url><url>
-    <loc>/cco-onboarding-baobab/categories.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/categories.html</loc>
   </url><url>
-    <loc>/cco-onboarding-baobab/tags.html</loc>
+    <loc>/klaytn-baobab-setup-workshop/tags.html</loc>
   </url>
 </urlset>

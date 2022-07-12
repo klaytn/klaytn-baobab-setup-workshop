@@ -1,153 +1,153 @@
 [
 {
-	"uri": "/cco-onboarding-baobab/10_prerequisites/10_firewall_configuration.html",
+	"uri": "/klaytn-baobab-setup-workshop/10_prerequisites/10_firewall_configuration.html",
 	"title": "Firewall Configuration",
 	"tags": [],
 	"description": "",
 	"content": "\n1. (Only for CN) Firewall configuration 1) If pre-cypress performance test is completed, remove below Klaytn CN\u0026rsquo;s IP address of Pre-cypress from your firewall ingress rule. 18.182.114.118\n2) For communication and multichannel between Baobab CN, allow TCP 32323-32324 with below IP addresses to your firewall ingress rule. 54.180.180.202\n54.180.18.176\n52.79.134.72\n52.78.232.39\n3) Additionally, it is required to allow UDP 32323 with the same IP addresses to your firewall ingress rule. 54.180.180.202\n54.180.18.176\n52.79.134.72\n52.78.232.39 Please note that the above four IP addresses are used for the Klaytn Baobab CNs.\nIf you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/50_start_services/10_start_klaytn_service.html",
+	"uri": "/klaytn-baobab-setup-workshop/50_start_services/10_start_klaytn_service.html",
 	"title": "Start the klaytn services",
 	"tags": [],
 	"description": "",
 	"content": "\n1. Start the Klaytn service, if it is running. 1) For CN, $ sudo systemctl status kcnd $ sudo systemctl start kcnd $ sudo systemctl status kcnd 2) For PN, $ sudo systemctl status kpnd $ sudo systemctl start kpnd $ sudo systemctl status kpnd 3) If the services are not installed from Yum, you can start the service like below, $ sudo \u0026lt;installation_path\u0026gt;/kcnd status $ sudo \u0026lt;installation_path\u0026gt;/kcnd start $ sudo \u0026lt;installation_path\u0026gt;/kcnd status If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/40_configure_network/10_prepare_genesis_for_baobab.html",
+	"uri": "/klaytn-baobab-setup-workshop/40_configure_network/10_prepare_genesis_for_baobab.html",
 	"title": "Prepare genesis.json for Baobab network",
 	"tags": [],
 	"description": "",
 	"content": "\n1. Remove or backup existing genesis.json for Pre-cypress. 1) For CN, $ mv \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data/genesis.json \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data/genesis.json.pre-cypress 2) For PN, $ mv \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data/genesis.json \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data/genesis.json.pre-cypress 2. Download the genesis.json for Baobab network. 1) For CN, $ curl -X GET https://packages.klaytn.net/baobab/genesis.json -o \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data/genesis.json 2) For PN, $ curl -X GET https://packages.klaytn.net/baobab/genesis.json -o \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data/genesis.json 3. Check the network_id in the genesis.json downloaded. 1) For CN, $ grep \u0026#34;chainId\u0026#34; \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data/genesis.json \u0026#34;chainId\u0026#34;: 1001, 2) For PN, $ grep \u0026#34;chainId\u0026#34; \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data/genesis.json \u0026#34;chainId\u0026#34;: 1001, If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/30_download_chaindata/10_download_chaindata.html",
+	"uri": "/klaytn-baobab-setup-workshop/30_download_chaindata/10_download_chaindata.html",
 	"title": "Download the latest Baobab chaindata",
 	"tags": [],
 	"description": "",
 	"content": "\n1. Download the latest chaindata snapshot from the Baobab snapshot archive. 0) Before proceeding, please check if your disk space is enough to store and extract the Baobab chaindata. ** You can refer to the Boabab snapshot archive where the Baobab chaindata snapshots have been snapshotted.\n1) Download the latest one from the archive. ** Please note that this step will take a long time to download since snapshot is more than 100 GB. $ wget https://packages.klaytn.net/baobab/chaindata/klaytn-baobab-chaindata-latest.tar.gz 3) (Optional) If you are using AWS CLI, aws s3 command can be considered to reduce the download time. ** This aws s3 command automatically performs multipart uploading and downloading based on the file size. For more details, please refer this link. S3 multipart upload and download $ aws s3 cp s3://klaytn-chaindata/baobab/klaytn-baobab-chaindata-20220711010712.tar.gz klaytn-baobab-chaindata-20220711010712.tar.gz\nIf you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/20_network_reset/10_stop_klaytn.html",
+	"uri": "/klaytn-baobab-setup-workshop/20_network_reset/10_stop_klaytn.html",
 	"title": "Stop the Klaytn service",
 	"tags": [],
 	"description": "",
 	"content": "\n1. Stop the Klaytn service, if it is running. 1) For CN, $ sudo systemctl status kcnd $ sudo systemctl stop kcnd $ sudo systemctl status kcnd 2) For PN, $ sudo systemctl status kpnd $ sudo systemctl stop kpnd $ sudo systemctl status kpnd 3) If the services are not installed from Yum, you can stop the service like below, $ sudo \u0026lt;installation_path\u0026gt;/kcnd status $ sudo \u0026lt;installation_path\u0026gt;/kcnd stop $ sudo \u0026lt;installation_path\u0026gt;/kcnd status If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/10_prerequisites.html",
+	"uri": "/klaytn-baobab-setup-workshop/10_prerequisites.html",
 	"title": "Prerequisites",
 	"tags": [],
 	"description": "",
 	"content": "Chapter 1 Prerequisites Please check the network firewall configuration to allow Baobab network and installation of packages.\nPlease click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/10_prerequisites/20_package_installation.html",
+	"uri": "/klaytn-baobab-setup-workshop/10_prerequisites/20_package_installation.html",
 	"title": "Package Installation",
 	"tags": [],
 	"description": "",
 	"content": "\n2. Installation of Klaytn packages for CN and PN ** We\u0026rsquo;ve already installed packages during the Pre-cypress stage. If you need to install newly, please refer these documents.\n1) CN - https://docs.klaytn.foundation/node/core-cell/installation-guide/consensus-node-setup/installation-guide 2) PN - https://docs.klaytn.foundation/node/core-cell/installation-guide/proxy-node-setup/installation-guide If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/50_start_services/20_start_telegraf_service.html",
+	"uri": "/klaytn-baobab-setup-workshop/50_start_services/20_start_telegraf_service.html",
 	"title": "Start the Telegraf service",
 	"tags": [],
 	"description": "",
 	"content": "\n2. Start the Telegraf service, if it is running. 1) For both CN and PN, $ sudo systemctl status telegraf $ sudo systemctl start telegraf $ sudo systemctl status telegraf If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/40_configure_network/20_node_configuration.html",
+	"uri": "/klaytn-baobab-setup-workshop/40_configure_network/20_node_configuration.html",
 	"title": "Node Configuration",
 	"tags": [],
 	"description": "",
 	"content": "\n1. Modify network, discovery and boot node information. ** Note that CN and PN have some different information.\n1) For CN, $ egrep \u0026#34;^NETWORK|NO_DISCOVER|BOOTNODES\u0026#34; /etc/kcnd/conf/kcnd.conf NETWORK=\u0026#34;baobab\u0026#34; NETWORK_ID= NO_DISCOVER=0 # setting 1 to disable discovery BOOTNODES=\u0026#34;kni://8e1881cdca97f52a76c6d2683db030f51a34ffc039476b4ed5bc5c757de1b5ce48fea1e53aa182a6ac2b076460881d50d3b57461d1cf36fae777e992893ad485@52.199.8.244:32323?discport=32323\u0026amp;ntype=bn\u0026#34; 2) For PN, $ egrep \u0026#34;^NETWORK|NO_DISCOVER|BOOTNODES\u0026#34; /etc/kpnd/conf/kpnd.conf NETWORK=\u0026#34;baobab\u0026#34; NETWORK_ID= NO_DISCOVER=1 # setting 1 to disable discovery BOOTNODES=\u0026#34;\u0026#34; 2. Check if the static-nodes.json is correct for your PN. ** Unlike CN, PN uses a static-nodes.json file to find out where to connect. The file might be already generated during installation of the Pre-cypress, then you don\u0026rsquo;t need to create or change anything. This step is just required to confirm if the information is correct.\n1) For PN1, [ \u0026#34;CN_KNI_ADDRESS@CN_INTERNAL_IP:PORT?discport=0\u0026amp;ntype=cn\u0026#34;, \u0026#34;PN2_KNI_ADDRESS@PN2_INTERNAL_IP:PORT?discport=0\u0026amp;ntype=pn\u0026#34; ] 2) For PN2, [ \u0026#34;CN_KNI_ADDRESS@CN_INTERNAL_IP:PORT?discport=0\u0026amp;ntype=cn\u0026#34;, \u0026#34;PN1_KNI_ADDRESS@PN1_INTERNAL_IP:PORT?discport=0\u0026amp;ntype=pn\u0026#34; ] If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/30_download_chaindata/20_unarchive_chaindata.html",
+	"uri": "/klaytn-baobab-setup-workshop/30_download_chaindata/20_unarchive_chaindata.html",
 	"title": "Extract the chaindata",
 	"tags": [],
 	"description": "",
 	"content": "\n1. Extract the chaindata downloaded to the DATA_DIR. 1) For CN, $ grep \u0026#34;DARA_DIR\u0026#34; /etc/kcnd/conf/kcnd.out $ tar -C \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz ** If you don\u0026rsquo;t remember the path DATA_DIR, you can check kcnd.conf. 2) For PN, $ grep \u0026#34;DARA_DIR\u0026#34; /etc/kpnd/conf/kpnd.out $ tar -C \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz ** If you don\u0026rsquo;t remember the path DATA_DIR, you can check kpnd.conf.\n2. You can remove the chaindata downloaded, if the previous step is completed. 1) For both CN and PN, $ rm klaytn-baobab-chaindata-latest.tar.gz If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/20_network_reset/20_stop_telegraf.html",
+	"uri": "/klaytn-baobab-setup-workshop/20_network_reset/20_stop_telegraf.html",
 	"title": "Stop the Telegraf service",
 	"tags": [],
 	"description": "",
 	"content": "\n2. Stop the Telegraf service, if it is running. 1) For both CN and PN, $ sudo systemctl status telegraf $ sudo systemctl stop telegraf $ sudo systemctl status telegraf If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/20_network_reset.html",
+	"uri": "/klaytn-baobab-setup-workshop/20_network_reset.html",
 	"title": "Reset Network Configuration",
 	"tags": [],
 	"description": "",
 	"content": "Chapter 2 Reset Network Configuration In this chapter, you will reset the network configuration for Pre-cypress. Please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/50_start_services/30_check_monitoring_dashboard.html",
+	"uri": "/klaytn-baobab-setup-workshop/50_start_services/30_check_monitoring_dashboard.html",
 	"title": "Check the monitoring dashboard",
 	"tags": [],
 	"description": "",
 	"content": "\n3. Take a look at Grafana dashboard to confirm if your nodes are correctly joined to Baobab network. Link : Baobab Grafana\nEverything is completed, if your nodes are shown in this dashboard. please send a message to Klaytn DevOps by Slack. If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/40_configure_network/30_node_initialization.html",
+	"uri": "/klaytn-baobab-setup-workshop/40_configure_network/30_node_initialization.html",
 	"title": "Node Initialization",
 	"tags": [],
 	"description": "",
 	"content": "\n1. Now, we will initialize each node using the Baobab genesis file. 1) For CN, $ cd \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data $ kcn --networkid 1001 init --datadir \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data genesis.json 2) For PN, $ cd \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data $ kcn --networkid 1001 init --datadir \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data genesis.json If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/20_network_reset/30_remove_data_and_log.html",
+	"uri": "/klaytn-baobab-setup-workshop/20_network_reset/30_remove_data_and_log.html",
 	"title": "Remove chaindata and log",
 	"tags": [],
 	"description": "",
 	"content": "\n3. Remove existing chaindata and log for pre-cypress. 1) For CN, $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data/klay/chaindata $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data/klay/lightchaindata $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/log/* 2) For PN, $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data/klay/chaindata $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data/klay/lightchaindata $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/log/* If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/30_download_chaindata.html",
+	"uri": "/klaytn-baobab-setup-workshop/30_download_chaindata.html",
 	"title": "Fast Sync with Baobab",
 	"tags": [],
 	"description": "",
 	"content": "Chapter 3 Fast Sync with Baobab chaindata Klaytn has been snapshotting Baobab chaindata once a day. In this chapter, we are going to explore where the snapshot is stored, and the latest chaindata snapshot of Baobab will be downloaded and unarchived to sync as fast as possible. Please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/40_configure_network.html",
+	"uri": "/klaytn-baobab-setup-workshop/40_configure_network.html",
 	"title": "Configure Baobab Network",
 	"tags": [],
 	"description": "",
 	"content": "Chapter 4 Configure Baobab Network Now, we are going to re-configure networks to join Baobab. Please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/50_start_services.html",
+	"uri": "/klaytn-baobab-setup-workshop/50_start_services.html",
 	"title": "Start the services",
 	"tags": [],
 	"description": "",
 	"content": "Chapter 5 Start the services Now, we are ready to start Klaytn service for Baobab.\nPlease click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/60_conclusion.html",
+	"uri": "/klaytn-baobab-setup-workshop/60_conclusion.html",
 	"title": "Conclusion",
 	"tags": [],
 	"description": "",
 	"content": "\nCongraturations! Now, you are playing in the Baobab network. "
 },
 {
-	"uri": "/cco-onboarding-baobab/",
+	"uri": "/klaytn-baobab-setup-workshop/",
 	"title": "Klaytn - CCO Onboarding - Baobab",
 	"tags": [],
 	"description": "",
 	"content": "\nCCO Onboarding - Baobab This online instruction let you join Klaytn Baobab network. If Consensus/Proxy node setup is already completed, you can start with chapter 2.\n"
 },
 {
-	"uri": "/cco-onboarding-baobab/categories.html",
+	"uri": "/klaytn-baobab-setup-workshop/categories.html",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/cco-onboarding-baobab/tags.html",
+	"uri": "/klaytn-baobab-setup-workshop/tags.html",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
