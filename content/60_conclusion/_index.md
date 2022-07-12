@@ -8,4 +8,4 @@ pre = "<b>6. </b>"
 
 
 ![Klaytn Baobab_Logo](/images/Logo-baobab.png)
-### Congraturations! Now, you are playing in the Baobab network.
+### Congratulations! Now, you are playing in the Baobab network.
