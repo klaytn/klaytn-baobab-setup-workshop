@@ -93,7 +93,7 @@
       <pubDate>Mon, 11 Jul 2022 15:43:06 +0900</pubDate>
       
       <guid>/klaytn-baobab-setup-workshop/30_download_chaindata/20_unarchive_chaindata.html</guid>
-      <description>1. Extract the chaindata downloaded to the DATA_DIR. 1) For CN, $ grep &amp;#34;DARA_DIR&amp;#34; /etc/kcnd/conf/kcnd.out $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz ** If you don&amp;rsquo;t remember the path DATA_DIR, you can check kcnd.conf. 2) For PN, $ grep &amp;#34;DARA_DIR&amp;#34; /etc/kpnd/conf/kpnd.out $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz ** If you don&amp;rsquo;t remember the path DATA_DIR, you can check kpnd.conf.
+      <description>1. Extract the chaindata downloaded to the DATA_DIR. 1) For CN, $ grep &amp;#34;DATA_DIR&amp;#34; /etc/kcnd/conf/kcnd.out $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz ** If you don&amp;rsquo;t remember the path DATA_DIR, you can check kcnd.conf. 2) For PN, $ grep &amp;#34;DATA_DIR&amp;#34; /etc/kpnd/conf/kpnd.out $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz ** If you don&amp;rsquo;t remember the path DATA_DIR, you can check kpnd.conf.
 2. You can remove the chaindata downloaded, if the previous step is completed.</description>
     </item>
     

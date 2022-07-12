@@ -67,7 +67,7 @@
 	"title": "Extract the chaindata",
 	"tags": [],
 	"description": "",
-	"content": "\n1. Extract the chaindata downloaded to the DATA_DIR. 1) For CN, $ grep \u0026#34;DARA_DIR\u0026#34; /etc/kcnd/conf/kcnd.out $ tar -C \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz ** If you don\u0026rsquo;t remember the path DATA_DIR, you can check kcnd.conf. 2) For PN, $ grep \u0026#34;DARA_DIR\u0026#34; /etc/kpnd/conf/kpnd.out $ tar -C \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz ** If you don\u0026rsquo;t remember the path DATA_DIR, you can check kpnd.conf.\n2. You can remove the chaindata downloaded, if the previous step is completed. 1) For both CN and PN, $ rm klaytn-baobab-chaindata-latest.tar.gz If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
+	"content": "\n1. Extract the chaindata downloaded to the DATA_DIR. 1) For CN, $ grep \u0026#34;DATA_DIR\u0026#34; /etc/kcnd/conf/kcnd.out $ tar -C \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz ** If you don\u0026rsquo;t remember the path DATA_DIR, you can check kcnd.conf. 2) For PN, $ grep \u0026#34;DATA_DIR\u0026#34; /etc/kpnd/conf/kpnd.out $ tar -C \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz ** If you don\u0026rsquo;t remember the path DATA_DIR, you can check kpnd.conf.\n2. You can remove the chaindata downloaded, if the previous step is completed. 1) For both CN and PN, $ rm klaytn-baobab-chaindata-latest.tar.gz If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
 	"uri": "/klaytn-baobab-setup-workshop/20_network_reset/20_stop_telegraf.html",
@@ -130,7 +130,7 @@
 	"title": "Conclusion",
 	"tags": [],
 	"description": "",
-	"content": "\nCongraturations! Now, you are playing in the Baobab network. "
+	"content": "\nCongratulations! Now, you are playing in the Baobab network. "
 },
 {
 	"uri": "/klaytn-baobab-setup-workshop/",
