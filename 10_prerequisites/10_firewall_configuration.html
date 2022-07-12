@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="">
+<meta name="author" content="Klaytn DevOps team">
+
+    <link rel="shortcut icon" href="/cco-onboarding-baobab/images/Logo-2.png" type="image/x-icon" />
+
+    <title>Firewall Configuration - Klaytn CCO Onboarding - Baobab</title>
+
+    
+    <link href="/cco-onboarding-baobab/css/nucleus.css?1657612301" rel="stylesheet">
+    <link href="/cco-onboarding-baobab/css/fontawesome-all.min.css?1657612301" rel="stylesheet">
+    <link href="/cco-onboarding-baobab/css/hybrid.css?1657612301" rel="stylesheet">
+    <link href="/cco-onboarding-baobab/css/featherlight.min.css?1657612301" rel="stylesheet">
+    <link href="/cco-onboarding-baobab/css/perfect-scrollbar.min.css?1657612301" rel="stylesheet">
+    <link href="/cco-onboarding-baobab/css/auto-complete.css?1657612301" rel="stylesheet">
+    <link href="/cco-onboarding-baobab/css/atom-one-dark-reasonable.css?1657612301" rel="stylesheet">
+    <link href="/cco-onboarding-baobab/css/theme.css?1657612301" rel="stylesheet">
+    <link href="/cco-onboarding-baobab/css/tabs.css?1657612301" rel="stylesheet">
+    <link href="/cco-onboarding-baobab/css/hugo-theme.css?1657612301" rel="stylesheet">
+    
+    <link href="/cco-onboarding-baobab/css/theme-klaytn.css?1657612301" rel="stylesheet">
+    
+    <link href="/cco-onboarding-baobab/css/foo.css?1657612301" rel="stylesheet"><link href="/cco-onboarding-baobab/css/bar.css?1657612301" rel="stylesheet">
+
+    <script src="/cco-onboarding-baobab/js/jquery-3.3.1.min.js?1657612301"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/cco-onboarding-baobab/10_prerequisites/10_firewall_configuration.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href=".."><img src="/cco-onboarding-baobab/images/Logo-2.png" ></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/cco-onboarding-baobab/js/lunr.min.js?1657612301"></script>
+<script type="text/javascript" src="/cco-onboarding-baobab/js/auto-complete.js?1657612301"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/cco-onboarding-baobab";
+    
+</script>
+<script type="text/javascript" src="/cco-onboarding-baobab/js/search.js?1657612301"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10_prerequisites.html" title="Prerequisites" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/cco-onboarding-baobab/10_prerequisites.html">
+          <b>1. </b>Prerequisites
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/10_prerequisites/10_firewall_configuration.html" title="Firewall Configuration" class="dd-item active">
+        <a href="/cco-onboarding-baobab/10_prerequisites/10_firewall_configuration.html">
+        <b>A. </b>Firewall Configuration
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/10_prerequisites/20_package_installation.html" title="Package Installation" class="dd-item ">
+        <a href="/cco-onboarding-baobab/10_prerequisites/20_package_installation.html">
+        <b>B. </b>Package Installation
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/20_network_reset.html" title="Reset Network Configuration" class="dd-item
+        
+        
+        
+        ">
+      <a href="/cco-onboarding-baobab/20_network_reset.html">
+          <b>2. </b>Reset Network Configuration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_network_reset/10_stop_klaytn.html" title="Stop the Klaytn service" class="dd-item ">
+        <a href="/cco-onboarding-baobab/20_network_reset/10_stop_klaytn.html">
+        <b>A. </b>Stop the Klaytn service
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_network_reset/20_stop_telegraf.html" title="Stop the Telegraf service" class="dd-item ">
+        <a href="/cco-onboarding-baobab/20_network_reset/20_stop_telegraf.html">
+        <b>B. </b>Stop the Telegraf service
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_network_reset/30_remove_data_and_log.html" title="Remove chaindata and log" class="dd-item ">
+        <a href="/cco-onboarding-baobab/20_network_reset/30_remove_data_and_log.html">
+        <b>C. </b>Remove chaindata and log
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/30_download_chaindata.html" title="Fast Sync with Baobab" class="dd-item
+        
+        
+        
+        ">
+      <a href="/cco-onboarding-baobab/30_download_chaindata.html">
+          <b>3. </b>Fast Sync with Baobab
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_download_chaindata/10_download_chaindata.html" title="Download the latest Baobab chaindata" class="dd-item ">
+        <a href="/cco-onboarding-baobab/30_download_chaindata/10_download_chaindata.html">
+        <b>A. </b>Download the latest Baobab chaindata
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_download_chaindata/20_unarchive_chaindata.html" title="Extract the chaindata" class="dd-item ">
+        <a href="/cco-onboarding-baobab/30_download_chaindata/20_unarchive_chaindata.html">
+        <b>B. </b>Extract the chaindata
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/40_configure_network.html" title="Configure Baobab Network" class="dd-item
+        
+        
+        
+        ">
+      <a href="/cco-onboarding-baobab/40_configure_network.html">
+          <b>4. </b>Configure Baobab Network
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/40_configure_network/10_prepare_genesis_for_baobab.html" title="Prepare genesis.json for Baobab network" class="dd-item ">
+        <a href="/cco-onboarding-baobab/40_configure_network/10_prepare_genesis_for_baobab.html">
+        <b>A. </b>Prepare genesis.json for Baobab network
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/40_configure_network/20_node_configuration.html" title="Node Configuration" class="dd-item ">
+        <a href="/cco-onboarding-baobab/40_configure_network/20_node_configuration.html">
+        <b>B. </b>Node Configuration
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/40_configure_network/30_node_initialization.html" title="Node Initialization" class="dd-item ">
+        <a href="/cco-onboarding-baobab/40_configure_network/30_node_initialization.html">
+        <b>C. </b>Node Initialization
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/50_start_services.html" title="Start the services" class="dd-item
+        
+        
+        
+        ">
+      <a href="/cco-onboarding-baobab/50_start_services.html">
+          <b>5. </b>Start the services
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_start_services/10_start_klaytn_service.html" title="Start the klaytn services" class="dd-item ">
+        <a href="/cco-onboarding-baobab/50_start_services/10_start_klaytn_service.html">
+        <b>A. </b>Start the klaytn services
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_start_services/20_start_telegraf_service.html" title="Start the Telegraf service" class="dd-item ">
+        <a href="/cco-onboarding-baobab/50_start_services/20_start_telegraf_service.html">
+        <b>B. </b>Start the Telegraf service
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_start_services/30_check_monitoring_dashboard.html" title="Check the monitoring dashboard" class="dd-item ">
+        <a href="/cco-onboarding-baobab/50_start_services/30_check_monitoring_dashboard.html">
+        <b>C. </b>Check the monitoring dashboard
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/60_conclusion.html" title="Conclusion" class="dd-item
+        
+        
+        
+        ">
+      <a href="/cco-onboarding-baobab/60_conclusion.html">
+          <b>6. </b>Conclusion
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://github.com/klaytn/klaytn"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://docs.klaytn.foundation/"><i class='fas fa-bookmark'></i> Klaytn Documentation</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://klaytn.foundation/"><i class='fas fa-bullhorn'></i> Klaytn Foundation</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>© Klaytn Foundation 2022. All rights reserved.</p>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   Firewall Configuration
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Firewall Configuration
+            </h1>
+          
+
+        
+
+
+<br />
+
+<h4 id="1-only-for-cn-firewall-configuration">1. <em>(Only for CN)</em> Firewall configuration</h4>
+<h5 id="1-if-pre-cypress-performance-test-is-completed-remove-below-klaytn-cns-ip-address-of-pre-cypress-from-your-firewall-ingress-rule">1) If pre-cypress performance test is completed, remove below Klaytn CN&rsquo;s IP address of Pre-cypress from your firewall ingress rule.</h5>
+<p><code>18.182.114.118</code></p>
+<h5 id="2-for-communication-and-multichannel-between-baobab-cn-allow-tcp-32323-32324-with-below-ip-addresses-to-your-firewall-ingress-rule">2) For communication and multichannel between Baobab CN, allow TCP <code>32323-32324</code> with below IP addresses to your firewall ingress rule.</h5>
+<p><code>54.180.180.202</code><br>
+<code>54.180.18.176</code><br>
+<code>52.79.134.72</code><br>
+<code>52.78.232.39</code></p>
+<h5 id="3-additionally-it-is-required-to-allow-udp--32323--with-the-same-ip-addresses-to-your-firewall-ingress-rule">3) Additionally, it is required to allow UDP <code>32323</code> with the same IP addresses to your firewall ingress rule.</h5>
+<p><code>54.180.180.202</code><br>
+<code>54.180.18.176</code><br>
+<code>52.79.134.72</code><br>
+<code>52.78.232.39</code>
+<br />
+<br>
+<em>Please note that the above four IP addresses are used for the Klaytn Baobab CNs.</em></p>
+<p><br />
+
+If you finish this step, please click the next button <code>&gt;</code> on the right side of this page.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/cco-onboarding-baobab/10_prerequisites.html" title="Prerequisites"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/cco-onboarding-baobab/10_prerequisites/20_package_installation.html" title="Package Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/cco-onboarding-baobab/js/clipboard.min.js?1657612301"></script>
+    <script src="/cco-onboarding-baobab/js/perfect-scrollbar.min.js?1657612301"></script>
+    <script src="/cco-onboarding-baobab/js/perfect-scrollbar.jquery.min.js?1657612301"></script>
+    <script src="/cco-onboarding-baobab/js/jquery.sticky.js?1657612301"></script>
+    <script src="/cco-onboarding-baobab/js/featherlight.min.js?1657612301"></script>
+    <script src="/cco-onboarding-baobab/js/highlight.pack.js?1657612301"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/cco-onboarding-baobab/js/modernizr.custom-3.6.0.js?1657612301"></script>
+    <script src="/cco-onboarding-baobab/js/learn.js?1657612301"></script>
+    <script src="/cco-onboarding-baobab/js/hugo-learn.js?1657612301"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

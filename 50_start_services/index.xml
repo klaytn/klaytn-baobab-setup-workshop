@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Start the services on Klaytn CCO Onboarding - Baobab</title>
+    <link>/cco-onboarding-baobab/50_start_services.html</link>
+    <description>Recent content in Start the services on Klaytn CCO Onboarding - Baobab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Jul 2022 18:26:28 +0900</lastBuildDate><atom:link href="/cco-onboarding-baobab/50_start_services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Start the klaytn services</title>
+      <link>/cco-onboarding-baobab/50_start_services/10_start_klaytn_service.html</link>
+      <pubDate>Mon, 11 Jul 2022 18:37:31 +0900</pubDate>
+      
+      <guid>/cco-onboarding-baobab/50_start_services/10_start_klaytn_service.html</guid>
+      <description>1. Start the Klaytn service, if it is running. 1) For CN, $ sudo systemctl status kcnd $ sudo systemctl start kcnd $ sudo systemctl status kcnd 2) For PN, $ sudo systemctl status kpnd $ sudo systemctl start kpnd $ sudo systemctl status kpnd 3) If the services are not installed from Yum, you can start the service like below, $ sudo &amp;lt;installation_path&amp;gt;/kcnd status $ sudo &amp;lt;installation_path&amp;gt;/kcnd start $ sudo &amp;lt;installation_path&amp;gt;/kcnd status If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+    </item>
+    
+    <item>
+      <title>Start the Telegraf service</title>
+      <link>/cco-onboarding-baobab/50_start_services/20_start_telegraf_service.html</link>
+      <pubDate>Mon, 11 Jul 2022 18:39:03 +0900</pubDate>
+      
+      <guid>/cco-onboarding-baobab/50_start_services/20_start_telegraf_service.html</guid>
+      <description>2. Start the Telegraf service, if it is running. 1) For both CN and PN, $ sudo systemctl status telegraf $ sudo systemctl start telegraf $ sudo systemctl status telegraf If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+    </item>
+    
+    <item>
+      <title>Check the monitoring dashboard</title>
+      <link>/cco-onboarding-baobab/50_start_services/30_check_monitoring_dashboard.html</link>
+      <pubDate>Mon, 11 Jul 2022 18:42:35 +0900</pubDate>
+      
+      <guid>/cco-onboarding-baobab/50_start_services/30_check_monitoring_dashboard.html</guid>
+      <description>3. Take a look at Grafana dashboard to confirm if your nodes are correctly joined to Baobab network. Link : Baobab Grafana
+Everything is completed, if your nodes are shown in this dashboard. please send a message to Klaytn DevOps by Slack. If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+    </item>
+    
+  </channel>
+</rss>
