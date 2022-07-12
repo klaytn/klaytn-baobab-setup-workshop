@@ -1,4 +1,4 @@
-baseURL = "/cco-onboarding-baobab"
+baseURL = "/klaytn-baobab-setup-workshop"
 languageCode = 'en-us'
 title = 'Klaytn CCO Onboarding - Baobab'
 uglyurls = true
