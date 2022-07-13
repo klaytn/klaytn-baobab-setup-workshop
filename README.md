@@ -45,5 +45,5 @@ Thank you for your interest in contributing to Klaytn Workshop. Klaytn Workshop 
 ├── static
 └── themes
 ```
-2. Labaeling - [issue|typo|new]
-3. Branch Naming when PR - hubo/update-issue-3-b 
+2. Labaeling - [issue|typo|update|new]
+3. Branch Naming when PR - hubo/update-3-b, hugo/new-3-c 
