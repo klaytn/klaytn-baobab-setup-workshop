@@ -7,7 +7,7 @@ draft: false
 ---
 
 {{< line_break >}}
-#### 1. Extract the chaindata downloaded to the DATA_DIR.
+#### 2. Extract the chaindata downloaded to the DATA_DIR.
 
 ##### 1) For CN,
 {{< highlight html >}}
@@ -26,13 +26,5 @@ $ tar -I pigz -C <your_klaytn_home_path>/kcnd/data -xvf klaytn-baobab-chaindata-
 $ tar -C <your_klaytn_home_path>/kpnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz
 {{< /highlight >}}
 
-#### 2. You can remove the chaindata downloaded, if the previous step is completed.
-
-##### 1) For both CN and PN,
-{{< highlight html >}}
-$ rm klaytn-baobab-chaindata-20220714010711.tar.gz
-{{< /highlight >}}
-
-{{< line_break >}}
 {{< line_break >}}
 If you finish this step, please click the next button ```>``` on the right side of this page.

@@ -33,7 +33,6 @@ $ echo $URL
 https://s3.ap-northeast-2.amazonaws.com/klaytn-chaindata/baobab/klaytn-baobab-chaindata-20220714010711.tar.gz
 $ axel -n8 $URL
 {{< /highlight >}}
-{{< line_break >}}
 
 {{< line_break >}}
 If you finish this step, please click the next button ```>``` on the right side of this page.
