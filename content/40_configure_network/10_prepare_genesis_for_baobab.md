@@ -29,7 +29,8 @@ $ curl -X GET https://packages.klaytn.net/baobab/genesis.json -o <your_klaytn_ho
 {{< /highlight >}}
 {{< line_break >}}
 
-#### 3. Check the network_id in the genesis.json downloaded.
+#### 3. Check the value of chainId in the genesis.json downloaded.
+_** Please note that Baobab network id is 1001._
 ##### 1) For CN,
 {{< highlight html >}}
 $ grep "chainId" <your_klaytn_home_path>/kcnd/data/genesis.json
@@ -41,6 +42,9 @@ $ grep "chainId" <your_klaytn_home_path>/kpnd/data/genesis.json
 "chainId": 1001,
 {{< /highlight >}}
 {{< line_break >}}
+
+_** If you want to get more information about genesis.json, please refer this link below._   
+_https://docs.klaytn.foundation/node/service-chain/references/genesis_
 
 {{< line_break >}}
 If you finish this step, please click the next button ```>``` on the right side of this page.

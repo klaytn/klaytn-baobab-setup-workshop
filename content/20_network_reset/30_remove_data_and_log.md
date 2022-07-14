@@ -8,6 +8,12 @@ draft: false
 
 {{< line_break >}}
 #### 3. Remove existing chaindata and log for pre-cypress.
+
+##### 0) During pre-cypress, you did set <klaytn_home_path> for Ansible deployment. But you can check this out if you can't remember where your data directory is located.
+{{< highlight html >}}
+$ grep "DATA_DIR" /etc/kpnd/conf/kpnd.conf
+{{< /highlight >}}
+
 ##### 1) For CN,
 {{< highlight html >}}
 $ sudo rm -Rf <your_klaytn_home_path>/kcnd/data/klay/chaindata

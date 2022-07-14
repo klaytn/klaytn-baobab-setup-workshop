@@ -10,7 +10,7 @@ pre = "<b>2. </b>"
 
 # Reset Network Configuration
 
-#### In this chapter, you will reset the network configuration for Pre-cypress.
+#### In this chapter, you will reset the Pre-cypress network configuration.
 
 {{< line_break >}}
 {{< line_break >}}

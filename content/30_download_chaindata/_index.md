@@ -11,7 +11,7 @@ pre = "<b>3. </b>"
 # Fast Sync with Baobab chaindata   
 
 #### Klaytn has been snapshotting Baobab chaindata once a day. 
-#### In this chapter, we are going to explore where the snapshot is stored, and the latest chaindata snapshot of Baobab will be downloaded and unarchived to sync as fast as possible.
+#### In this chapter, we are going to explore where the snapshot is stored, and the latest chaindata snapshot of Baobab will be used to sync as fast as possible.
 
 {{< line_break >}}
 {{< line_break >}}

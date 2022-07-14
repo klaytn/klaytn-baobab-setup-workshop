@@ -22,7 +22,7 @@ $ sudo systemctl start kpnd
 $ sudo systemctl status kpnd
 {{< /highlight >}}
 
-##### 3) If the services are not installed from Yum, you can start the service like below,
+##### 3) If the services are not installed from ```yum```, you can start the service like below,
 {{< highlight html >}}
 $ sudo <installation_path>/kcnd status
 $ sudo <installation_path>/kcnd start
