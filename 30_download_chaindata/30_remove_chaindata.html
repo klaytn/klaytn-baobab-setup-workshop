@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/klaytn-baobab-setup-workshop/images/Logo-2.png" type="image/x-icon" />
 
-    <title>Check the services - Klaytn CCO Onboarding - Baobab</title>
+    <title>Remove Chaindata - Klaytn CCO Onboarding - Baobab</title>
 
     
     <link href="/klaytn-baobab-setup-workshop/css/nucleus.css?1657794905" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/klaytn-baobab-setup-workshop/50_start_services/30_check_the_services.html">
+  <body class="" data-url="/klaytn-baobab-setup-workshop/30_download_chaindata/30_remove_chaindata.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -258,7 +258,7 @@
   
     
     <li data-nav-id="/30_download_chaindata.html" title="Fast Sync with Baobab" class="dd-item
-        
+        parent
         
         
         ">
@@ -328,7 +328,7 @@
  
   
     
-      <li data-nav-id="/30_download_chaindata/30_remove_chaindata.html" title="Remove Chaindata" class="dd-item ">
+      <li data-nav-id="/30_download_chaindata/30_remove_chaindata.html" title="Remove Chaindata" class="dd-item active">
         <a href="/klaytn-baobab-setup-workshop/30_download_chaindata/30_remove_chaindata.html">
         <b>C. </b>Remove Chaindata
         <i class="fas fa-check read-icon"></i>
@@ -477,7 +477,7 @@
   
     
     <li data-nav-id="/50_start_services.html" title="Start the services" class="dd-item
-        parent
+        
         
         
         ">
@@ -547,7 +547,7 @@
  
   
     
-      <li data-nav-id="/50_start_services/30_check_the_services.html" title="Check the services" class="dd-item active">
+      <li data-nav-id="/50_start_services/30_check_the_services.html" title="Check the services" class="dd-item ">
         <a href="/klaytn-baobab-setup-workshop/50_start_services/30_check_the_services.html">
         <b>C. </b>Check the services
         <i class="fas fa-check read-icon"></i>
@@ -680,7 +680,7 @@
                   <span class="links">
                  
                  
-                   Check the services
+                   Remove Chaindata
                  
                   </span>
                 </div>
@@ -711,7 +711,7 @@
           
             <h1>
               
-              Check the services
+              Remove Chaindata
             </h1>
           
 
@@ -720,16 +720,12 @@
 
 <br />
 
-<h4 id="3-watch-the-service-log-to-confirm-if-your-nodes-are-correctly-joined">3. Watch the service log to confirm if your nodes are correctly joined.</h4>
-<p><em>** If the node is not a proposer at that block, and the consensus is successful, the node have executed(==validates) the block. In other words, a block is inserted.</em>
-_** You can refer <a href="https://docs.klaytn.foundation/node/node-log#info-logs">this document</a> for more details about node log.</p>
-<h5 id="1-for-cn">1) For CN,</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ tail &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kcnd/log/kcnd.out
-</span></span><span style="display:flex;"><span>INFO Inserted a new block number=14 hash=13cbfc…f007fc txs=0 gas=0 elapsed=793.458µs processTxs=167ns finalize=157.708µs validateState=7.542µs totalWrite=443.417µs trieWrite=256.667µs</span></span></code></pre></div>
-<h5 id="2-for-pn">2) For PN,</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ tail &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kcnd/log/kpnd.out
-</span></span><span style="display:flex;"><span>INFO Inserted a new block number=14 hash=13cbfc…f007fc txs=0 gas=0 elapsed=793.458µs processTxs=167ns finalize=157.708µs validateState=7.542µs totalWrite=443.417µs trieWrite=256.667µs</span></span></code></pre></div>
+<h4 id="3-you-can-remove-the-chaindata-downloaded-if-the-previous-step-is-completed">3. You can remove the chaindata downloaded, if the previous step is completed.</h4>
+<h5 id="1-for-both-cn-and-pn">1) For both CN and PN,</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ rm klaytn-baobab-chaindata-20220714010711.tar.gz</span></span></code></pre></div>
 <p><br />
+
+<br />
 
 If you finish this step, please click the next button <code>&gt;</code> on the right side of this page.</p>
 
@@ -929,6 +925,90 @@ If you finish this step, please click the next button <code>&gt;</code> on the r
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -1008,90 +1088,6 @@ If you finish this step, please click the next button <code>&gt;</code> on the r
             
             
                 
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1132,10 +1128,10 @@ If you finish this step, please click the next button <code>&gt;</code> on the r
 	 
 	 
 		
-			<a class="nav nav-prev" href="/klaytn-baobab-setup-workshop/50_start_services/20_start_telegraf_service.html" title="Start the Telegraf service"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/klaytn-baobab-setup-workshop/30_download_chaindata/20_unarchive_chaindata.html" title="Extract the chaindata"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/klaytn-baobab-setup-workshop/50_start_services/40_check_monitoring_dashboard.html" title="Check Monitoring Dashboard" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/klaytn-baobab-setup-workshop/40_configure_network.html" title="Configure Baobab Network" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

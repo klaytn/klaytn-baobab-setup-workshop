@@ -23,8 +23,17 @@
       <pubDate>Mon, 11 Jul 2022 15:43:06 +0900</pubDate>
       
       <guid>/klaytn-baobab-setup-workshop/30_download_chaindata/20_unarchive_chaindata.html</guid>
-      <description>1. Extract the chaindata downloaded to the DATA_DIR. 1) For CN, $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz ** If you want to reduce the time for extracting, please refer this pigz example. (Amazon Linux 2) $ sudo amazon-linux-extras install epel (CentOS) $ sudo yum install epel-release -y $ sudo yum install pigz $ tar -I pigz -C &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz
-2) For PN, $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz 2.</description>
+      <description>2. Extract the chaindata downloaded to the DATA_DIR. 1) For CN, $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz ** If you want to reduce the time for extracting, please refer this pigz example. (Amazon Linux 2) $ sudo amazon-linux-extras install epel (CentOS) $ sudo yum install epel-release -y $ sudo yum install pigz $ tar -I pigz -C &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz
+2) For PN, $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+    </item>
+    
+    <item>
+      <title>Remove Chaindata</title>
+      <link>/klaytn-baobab-setup-workshop/30_download_chaindata/30_remove_chaindata.html</link>
+      <pubDate>Thu, 14 Jul 2022 19:26:47 +0900</pubDate>
+      
+      <guid>/klaytn-baobab-setup-workshop/30_download_chaindata/30_remove_chaindata.html</guid>
+      <description>3. You can remove the chaindata downloaded, if the previous step is completed. 1) For both CN and PN, $ rm klaytn-baobab-chaindata-20220714010711.tar.gz If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
     
   </channel>
