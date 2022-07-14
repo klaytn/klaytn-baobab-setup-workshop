@@ -10,8 +10,7 @@ draft = false
 ### Chapter 1
 
 # Prerequisites
-
-Please check the network firewall configuration to allow Baobab network and installation of packages. 
+The prerequisites for joining Baobab network are covered in this chapter. 
 
 {{< line_break >}}
 {{< line_break >}}

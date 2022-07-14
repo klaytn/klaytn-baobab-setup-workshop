@@ -24,7 +24,7 @@ draft: false
 ```52.79.134.72```   
 ```52.78.232.39```
 {{< line_break >}}   
-*Please note that the above four IP addresses are used for the Klaytn Baobab CNs.*
+*Please note that the above four IP addresses are attached to the Klaytn Baobab CNs.*
 
 {{< line_break >}}
 If you finish this step, please click the next button ```>``` on the right side of this page.

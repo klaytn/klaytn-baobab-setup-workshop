@@ -11,27 +11,28 @@ draft: false
 
 ##### 1) For CN,
 {{< highlight html >}}
-$ grep "DATA_DIR" /etc/kcnd/conf/kcnd.out
-$ tar -C <your_klaytn_home_path>/kcnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz
+$ tar -C <your_klaytn_home_path>/kcnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz
 {{< /highlight >}}
-_** If you don't remember the path DATA_DIR, you can check kcnd.conf._
-{{< line_break >}}
+_** If you want to reduce the time for extracting, please refer this [pigz](https://zlib.net/pigz/) example._
+{{< highlight html >}}
+(Amazon Linux 2) $ sudo amazon-linux-extras install epel
+(CentOS) $ sudo yum install epel-release -y
+$ sudo yum install pigz
+$ tar -I pigz -C <your_klaytn_home_path>/kcnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz
+{{< /highlight >}}
 
 ##### 2) For PN,
 {{< highlight html >}}
-$ grep "DATA_DIR" /etc/kpnd/conf/kpnd.out
-$ tar -C <your_klaytn_home_path>/kpnd/data -xvf klaytn-baobab-chaindata-latest.tar.gz
+$ tar -C <your_klaytn_home_path>/kpnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz
 {{< /highlight >}}
-_** If you don't remember the path DATA_DIR, you can check kpnd.conf._
 
 #### 2. You can remove the chaindata downloaded, if the previous step is completed.
 
 ##### 1) For both CN and PN,
 {{< highlight html >}}
-$ rm klaytn-baobab-chaindata-latest.tar.gz
+$ rm klaytn-baobab-chaindata-20220714010711.tar.gz
 {{< /highlight >}}
 
-{{< line_break >}}
 {{< line_break >}}
 {{< line_break >}}
 If you finish this step, please click the next button ```>``` on the right side of this page.
