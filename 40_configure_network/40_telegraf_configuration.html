@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/klaytn-baobab-setup-workshop/images/Logo-2.png" type="image/x-icon" />
 
-    <title>Klaytn - CCO Onboarding - Baobab - Klaytn CCO Onboarding - Baobab</title>
+    <title>Telegraf Configuration - Klaytn CCO Onboarding - Baobab</title>
 
     
     <link href="/klaytn-baobab-setup-workshop/css/nucleus.css?1657794199" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/klaytn-baobab-setup-workshop/">
+  <body class="" data-url="/klaytn-baobab-setup-workshop/40_configure_network/40_telegraf_configuration.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -336,7 +336,7 @@
   
     
     <li data-nav-id="/40_configure_network.html" title="Configure Baobab Network" class="dd-item
-        
+        parent
         
         
         ">
@@ -427,7 +427,7 @@
  
   
     
-      <li data-nav-id="/40_configure_network/40_telegraf_configuration.html" title="Telegraf Configuration" class="dd-item ">
+      <li data-nav-id="/40_configure_network/40_telegraf_configuration.html" title="Telegraf Configuration" class="dd-item active">
         <a href="/klaytn-baobab-setup-workshop/40_configure_network/40_telegraf_configuration.html">
         <b>D. </b>Telegraf Configuration
         <i class="fas fa-check read-icon"></i>
@@ -643,30 +643,77 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   Telegraf Configuration
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Telegraf Configuration
+            </h1>
           
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<p><img src="/klaytn-baobab-setup-workshop/images/Logo-1.png" alt="Klaytn Logo"></p>
-<h1 id="cco-onboarding---baobab">CCO Onboarding - Baobab</h1>
-<p>This online instruction let you join Klaytn Baobab network. <br>
-If Consensus/Proxy node setup is already completed, you can start with chapter 2.</p>
+<br />
+
+<h4 id="1-to-monitor-your-nodes-in-baobab-dashboard-please-change-the-influxdb-configuration-as-below">1. To monitor your nodes in Baobab Dashboard, please change the influxdb configuration as below:</h4>
+<h5 id="1-for-both-cn-and-pn">1) For both CN and PN,</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ grep -A2 &#34;influxdb&#34; /etc/telegraf/telegraf.d/klaytn.conf
+</span></span><span style="display:flex;"><span>[[outputs.influxdb]]
+</span></span><span style="display:flex;"><span>urls = [ &#34;http://15.164.55.202:8086&#34; ]
+</span></span><span style="display:flex;"><span>database = &#34;klaytn_beta_baobab&#34;</span></span></code></pre></div>
+<p><br />
+
+If you finish this step, please click the next button <code>&gt;</code> on the right side of this page.</p>
+
+
+<footer class="footline">
 	
-  
-        
-            </div> 
+</footer>
+
         
         </div>
         
@@ -922,6 +969,7 @@ If Consensus/Proxy node setup is already completed, you can start with chapter 2
             
                 
                     
+                    
                 
                 
 
@@ -940,6 +988,9 @@ If Consensus/Proxy node setup is already completed, you can start with chapter 2
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1041,8 +1092,10 @@ If Consensus/Proxy node setup is already completed, you can start with chapter 2
 	 
 	 
 		
+			<a class="nav nav-prev" href="/klaytn-baobab-setup-workshop/40_configure_network/30_node_initialization.html" title="Node Initialization"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/klaytn-baobab-setup-workshop/10_prerequisites.html" title="Prerequisites" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/klaytn-baobab-setup-workshop/50_start_services.html" title="Start the services" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

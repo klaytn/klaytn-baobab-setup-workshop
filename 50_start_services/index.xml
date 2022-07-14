@@ -13,7 +13,7 @@
       <pubDate>Mon, 11 Jul 2022 18:37:31 +0900</pubDate>
       
       <guid>/klaytn-baobab-setup-workshop/50_start_services/10_start_klaytn_service.html</guid>
-      <description>1. Start the Klaytn service, if it is running. 1) For CN, $ sudo systemctl status kcnd $ sudo systemctl start kcnd $ sudo systemctl status kcnd 2) For PN, $ sudo systemctl status kpnd $ sudo systemctl start kpnd $ sudo systemctl status kpnd 3) If the services are not installed from Yum, you can start the service like below, $ sudo &amp;lt;installation_path&amp;gt;/kcnd status $ sudo &amp;lt;installation_path&amp;gt;/kcnd start $ sudo &amp;lt;installation_path&amp;gt;/kcnd status If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+      <description>1. Start the Klaytn service, if it is running. 1) For CN, $ sudo systemctl status kcnd $ sudo systemctl start kcnd $ sudo systemctl status kcnd 2) For PN, $ sudo systemctl status kpnd $ sudo systemctl start kpnd $ sudo systemctl status kpnd 3) If the services are not installed from yum, you can start the service like below, $ sudo &amp;lt;installation_path&amp;gt;/kcnd status $ sudo &amp;lt;installation_path&amp;gt;/kcnd start $ sudo &amp;lt;installation_path&amp;gt;/kcnd status If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
     
     <item>
@@ -26,13 +26,23 @@
     </item>
     
     <item>
-      <title>Check the monitoring dashboard</title>
-      <link>/klaytn-baobab-setup-workshop/50_start_services/30_check_monitoring_dashboard.html</link>
+      <title>Check the services</title>
+      <link>/klaytn-baobab-setup-workshop/50_start_services/30_check_the_services.html</link>
       <pubDate>Mon, 11 Jul 2022 18:42:35 +0900</pubDate>
       
-      <guid>/klaytn-baobab-setup-workshop/50_start_services/30_check_monitoring_dashboard.html</guid>
-      <description>3. Take a look at Grafana dashboard to confirm if your nodes are correctly joined to Baobab network. Link : Baobab Grafana
-Everything is completed, if your nodes are shown in this dashboard. please send a message to Klaytn DevOps by Slack. If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+      <guid>/klaytn-baobab-setup-workshop/50_start_services/30_check_the_services.html</guid>
+      <description>3. Watch the service log to confirm if your nodes are correctly joined. ** If the node is not a proposer at that block, and the consensus is successful, the node have executed(==validates) the block. In other words, a block is inserted. _** You can refer this document for more details about node log.
+1) For CN, $ tail &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/log/kcnd.out INFO Inserted a new block number=14 hash=13cbfc…f007fc txs=0 gas=0 elapsed=793.</description>
+    </item>
+    
+    <item>
+      <title>Check Monitoring Dashboard</title>
+      <link>/klaytn-baobab-setup-workshop/50_start_services/40_check_monitoring_dashboard.html</link>
+      <pubDate>Thu, 14 Jul 2022 19:11:35 +0900</pubDate>
+      
+      <guid>/klaytn-baobab-setup-workshop/50_start_services/40_check_monitoring_dashboard.html</guid>
+      <description>4. Take a look at Grafana dashboard to confirm if your nodes are correctly joined to Baobab network. Link : Baobab Grafana ** You can refer this document to check your services further.
+https://docs.klaytn.foundation/node/core-cell/installation-guide/testing-the-core-cell#kcn-console-kpn-console If your nodes are shown and CN/PN Inter Connections looks 2 in this dashboard, everything is configured normally. Please send a message to Klaytn DevOps by Slack channel #cco_7th_batch. If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
     
   </channel>
