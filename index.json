@@ -102,7 +102,7 @@
 	"title": "Node Initialization",
 	"tags": [],
 	"description": "",
-	"content": "\n1. Now, we will initialize each node using the Baobab genesis file. 1) For CN, $ cd \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data $ kcn --networkid 1001 init --datadir \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data genesis.json 2) For PN, $ cd \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data $ kcn --networkid 1001 init --datadir \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data genesis.json If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
+	"content": "\n1. Now, we will initialize each node using the Baobab genesis file. 1) For CN, $ cd \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data $ kcn --networkid 1001 init --datadir \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data genesis.json 2) For PN, $ cd \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data $ kpn --networkid 1001 init --datadir \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data genesis.json If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
 	"uri": "/klaytn-baobab-setup-workshop/20_network_reset/30_remove_data_and_log.html",
