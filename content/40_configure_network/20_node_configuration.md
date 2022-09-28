@@ -16,7 +16,7 @@ $ egrep "^NETWORK|NO_DISCOVER|BOOTNODES" /etc/kcnd/conf/kcnd.conf
 NETWORK="baobab"
 NETWORK_ID=
 NO_DISCOVER=0 # setting 1 to disable discovery
-BOOTNODES="kni://8e1881cdca97f52a76c6d2683db030f51a34ffc039476b4ed5bc5c757de1b5ce48fea1e53aa182a6ac2b076460881d50d3b57461d1cf36fae777e992893ad485@52.199.8.244:32323?discport=32323&ntype=bn"
+BOOTNODES="kni://979159c738bb0c8c60b36267c56d2b4d4a995326be666460c3d612856caab522ebe6f81ea5cdbb605051f12cbf8f787ce0f172256545a5b3400c751afbdcd0c8@13.209.190.55:32323?discport=32323&ntype=bn"
 {{< /highlight >}}
 
 ##### 2) For PN, your configuration should be modified as shown below.
