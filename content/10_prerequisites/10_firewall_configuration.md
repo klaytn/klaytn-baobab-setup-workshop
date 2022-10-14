@@ -30,6 +30,7 @@ draft: false
 IP version    |    Type           |    Protocol    |    Port range    |    Destination
 ---------------------------------------------------------------------------------------
 IPv4          |    All traffic    |    All         |    All           |    0.0.0.0/0
+```
 
 {{< line_break >}}   
 *Please note that the above four IP addresses are attached to the Klaytn Baobab CNs.*
