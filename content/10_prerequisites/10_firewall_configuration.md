@@ -24,6 +24,7 @@ draft: false
 ```54.180.18.176```   
 ```52.79.134.72```   
 ```52.78.232.39```
+```13.209.190.55```
 
 ##### 4) For communication, allow ```all traffic``` to your firewall ```egress``` rule.
 ```vim
