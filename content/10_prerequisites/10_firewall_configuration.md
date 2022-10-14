@@ -11,6 +11,7 @@ draft: false
 
 ##### 1) If pre-cypress performance test is completed, remove below Klaytn CN's IP address of Pre-cypress from your firewall ingress rule.
 ```18.182.114.118```
+```54.178.128.92```
 
 ##### 2) For communication and multichannel between Baobab CN, allow TCP ```32323-32324``` with below IP addresses to your firewall ingress rule.
 ```54.180.180.202```   
@@ -23,6 +24,13 @@ draft: false
 ```54.180.18.176```   
 ```52.79.134.72```   
 ```52.78.232.39```
+
+##### 4) For communication, allow ```all traffic``` to your firewall ```egress``` rule.
+```vim
+IP version    |    Type           |    Protocol    |    Port range    |    Destination
+---------------------------------------------------------------------------------------
+IPv4          |    All traffic    |    All         |    All           |    0.0.0.0/0
+
 {{< line_break >}}   
 *Please note that the above four IP addresses are attached to the Klaytn Baobab CNs.*
 
