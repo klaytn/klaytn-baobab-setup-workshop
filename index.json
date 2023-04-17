@@ -119,7 +119,7 @@
 	"content": "\n4. Take a look at Grafana dashboard to confirm if your nodes are correctly joined to Baobab network. Link : Baobab Grafana ** You can refer this document to check your services further.\nhttps://docs.klaytn.foundation/node/core-cell/installation-guide/testing-the-core-cell#kcn-console-kpn-console If your nodes are shown and CN/PN Inter Connections looks 2 in this dashboard, everything is configured normally. Please send a message to Klaytn DevOps by Slack channel #cco_7th_batch. If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/klaytn-baobab-setup-workshop/40_configure_network/40_telegraf_configuration.html",
+	"uri": "/klaytn-baobab-setup-workshop/40_configure_network/30_telegraf_configuration.html",
 	"title": "Telegraf Configuration",
 	"tags": [],
 	"description": "",

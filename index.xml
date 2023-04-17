@@ -146,10 +146,10 @@ https://docs.klaytn.foundation/node/core-cell/installation-guide/testing-the-cor
     
     <item>
       <title>Telegraf Configuration</title>
-      <link>/klaytn-baobab-setup-workshop/40_configure_network/40_telegraf_configuration.html</link>
+      <link>/klaytn-baobab-setup-workshop/40_configure_network/30_telegraf_configuration.html</link>
       <pubDate>Thu, 14 Jul 2022 16:44:50 +0900</pubDate>
       
-      <guid>/klaytn-baobab-setup-workshop/40_configure_network/40_telegraf_configuration.html</guid>
+      <guid>/klaytn-baobab-setup-workshop/40_configure_network/30_telegraf_configuration.html</guid>
       <description>1. To monitor your nodes in Baobab Dashboard, please change the influxdb configuration as below: 1) For both CN and PN, $ grep -A2 &amp;#34;influxdb&amp;#34; /etc/telegraf/telegraf.d/klaytn.conf [[outputs.influxdb]] urls = [ &amp;#34;http://15.164.55.202:8086&amp;#34; ] database = &amp;#34;klaytn_beta_baobab&amp;#34; If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
     
