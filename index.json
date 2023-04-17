@@ -98,13 +98,6 @@
 	"content": "\n3. Watch the service log to confirm if your nodes are correctly joined. ** If the node is not a proposer at that block, and the consensus is successful, the node have executed(==validates) the block. In other words, a block is inserted. _** You can refer this document for more details about node log.\n1) For CN, $ tail \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/log/kcnd.out INFO Inserted a new block number=14 hash=13cbfc…f007fc txs=0 gas=0 elapsed=793.458µs processTxs=167ns finalize=157.708µs validateState=7.542µs totalWrite=443.417µs trieWrite=256.667µs 2) For PN, $ tail \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/log/kpnd.out INFO Inserted a new block number=14 hash=13cbfc…f007fc txs=0 gas=0 elapsed=793.458µs processTxs=167ns finalize=157.708µs validateState=7.542µs totalWrite=443.417µs trieWrite=256.667µs If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/klaytn-baobab-setup-workshop/40_configure_network/30_node_initialization.html",
-	"title": "Node Initialization",
-	"tags": [],
-	"description": "",
-	"content": "\n1. Now, we will initialize each node using the Baobab genesis file. 1) For CN, $ cd \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data $ kcn --networkid 1001 init --datadir \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data genesis.json 2) For PN, $ cd \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data $ kpn --networkid 1001 init --datadir \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data genesis.json If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
-},
-{
 	"uri": "/klaytn-baobab-setup-workshop/20_network_reset/30_remove_data_and_log.html",
 	"title": "Remove chaindata and log",
 	"tags": [],

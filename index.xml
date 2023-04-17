@@ -126,15 +126,6 @@
     </item>
     
     <item>
-      <title>Node Initialization</title>
-      <link>/klaytn-baobab-setup-workshop/40_configure_network/30_node_initialization.html</link>
-      <pubDate>Mon, 11 Jul 2022 17:23:03 +0900</pubDate>
-      
-      <guid>/klaytn-baobab-setup-workshop/40_configure_network/30_node_initialization.html</guid>
-      <description>1. Now, we will initialize each node using the Baobab genesis file. 1) For CN, $ cd &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data $ kcn --networkid 1001 init --datadir &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data genesis.json 2) For PN, $ cd &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data $ kpn --networkid 1001 init --datadir &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data genesis.json If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
-    </item>
-    
-    <item>
       <title>Remove chaindata and log</title>
       <link>/klaytn-baobab-setup-workshop/20_network_reset/30_remove_data_and_log.html</link>
       <pubDate>Mon, 11 Jul 2022 15:17:04 +0900</pubDate>
