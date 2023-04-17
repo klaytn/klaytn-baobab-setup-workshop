@@ -36,8 +36,7 @@
       <pubDate>Mon, 11 Jul 2022 17:10:58 +0900</pubDate>
       
       <guid>/klaytn-baobab-setup-workshop/40_configure_network/10_prepare_genesis_for_baobab.html</guid>
-      <description>1. Remove or backup existing genesis.json for Pre-cypress. 1) For CN, $ mv &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data/genesis.json &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data/genesis.json.pre-cypress 2) For PN, $ mv &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data/genesis.json &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data/genesis.json.pre-cypress 2. Download the genesis.json for Baobab network. 1) For CN, $ curl -X GET https://packages.klaytn.net/baobab/genesis.json -o &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data/genesis.json 2) For PN, $ curl -X GET https://packages.klaytn.net/baobab/genesis.json -o &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data/genesis.json 3. Check the value of chainId in the genesis.json downloaded. ** Please note that Baobab network id is 1001.
-1) For CN, $ grep &amp;#34;chainId&amp;#34; &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data/genesis.</description>
+      <description>1. Remove or backup existing genesis.json for Pre-cypress. 1) For CN, $ mv &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data/genesis.json &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data/genesis.json.pre-cypress 2) For PN, $ mv &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data/genesis.json &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data/genesis.json.pre-cypress If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
     
     <item>

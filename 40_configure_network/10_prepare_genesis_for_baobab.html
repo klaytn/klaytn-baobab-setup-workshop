@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.104.3" />
+    <meta name="generator" content="Hugo 0.111.3">
     <meta name="description" content="">
 <meta name="author" content="Klaytn DevOps team">
 
@@ -12,22 +12,22 @@
     <title>Prepare genesis.json for Baobab network - Klaytn CCO Onboarding - Baobab</title>
 
     
-    <link href="/klaytn-baobab-setup-workshop/css/nucleus.css?1665738331" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/fontawesome-all.min.css?1665738331" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/hybrid.css?1665738331" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/featherlight.min.css?1665738331" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/perfect-scrollbar.min.css?1665738331" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/auto-complete.css?1665738331" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/atom-one-dark-reasonable.css?1665738331" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/theme.css?1665738331" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/tabs.css?1665738331" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/hugo-theme.css?1665738331" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/nucleus.css?1681716535" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/fontawesome-all.min.css?1681716535" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/hybrid.css?1681716535" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/featherlight.min.css?1681716535" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/perfect-scrollbar.min.css?1681716535" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/auto-complete.css?1681716535" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/atom-one-dark-reasonable.css?1681716535" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/theme.css?1681716535" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/tabs.css?1681716535" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/hugo-theme.css?1681716535" rel="stylesheet">
     
-    <link href="/klaytn-baobab-setup-workshop/css/theme-klaytn.css?1665738331" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/theme-klaytn.css?1681716535" rel="stylesheet">
     
-    <link href="/klaytn-baobab-setup-workshop/css/foo.css?1665738331" rel="stylesheet"><link href="/klaytn-baobab-setup-workshop/css/bar.css?1665738331" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/foo.css?1681716535" rel="stylesheet"><link href="/klaytn-baobab-setup-workshop/css/bar.css?1681716535" rel="stylesheet">
 
-    <script src="/klaytn-baobab-setup-workshop/js/jquery-3.3.1.min.js?1665738331"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/jquery-3.3.1.min.js?1681716535"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/lunr.min.js?1665738331"></script>
-<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/auto-complete.js?1665738331"></script>
+<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/lunr.min.js?1681716535"></script>
+<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/auto-complete.js?1681716535"></script>
 <script type="text/javascript">
     
         var baseurl = "\/klaytn-baobab-setup-workshop";
     
 </script>
-<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/search.js?1665738331"></script>
+<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/search.js?1681716535"></script>
 
     
   </div>
@@ -727,25 +727,6 @@
 <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ mv &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kpnd/data/genesis.json &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kpnd/data/genesis.json.pre-cypress</span></span></code></pre></div>
 <br />
 </p>
-<h4 id="2-download-the-genesisjson-for-baobab-network">2. Download the genesis.json for Baobab network.</h4>
-<h5 id="1-for-cn-1">1) For CN,</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ curl -X GET https://packages.klaytn.net/baobab/genesis.json -o &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kcnd/data/genesis.json</span></span></code></pre></div>
-<h5 id="2-for-pn-1">2) For PN,</h5>
-<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ curl -X GET https://packages.klaytn.net/baobab/genesis.json -o &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kpnd/data/genesis.json</span></span></code></pre></div>
-<br />
-</p>
-<h4 id="3-check-the-value-of-chainid-in-the-genesisjson-downloaded">3. Check the value of chainId in the genesis.json downloaded.</h4>
-<p><em>** Please note that Baobab network id is 1001.</em></p>
-<h5 id="1-for-cn-2">1) For CN,</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ grep &#34;chainId&#34; &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kcnd/data/genesis.json
-</span></span><span style="display:flex;"><span>&#34;chainId&#34;: 1001,</span></span></code></pre></div>
-<h5 id="2-for-pn-2">2) For PN,</h5>
-<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ grep &#34;chainId&#34; &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kpnd/data/genesis.json
-</span></span><span style="display:flex;"><span>&#34;chainId&#34;: 1001,</span></span></code></pre></div>
-<br />
-</p>
-<p><em>** If you want to get more information about genesis.json, please refer this link below.</em><br>
-<em><a href="https://docs.klaytn.foundation/node/service-chain/references/genesis">https://docs.klaytn.foundation/node/service-chain/references/genesis</a></em></p>
 <p><br />
 
 If you finish this step, please click the next button <code>&gt;</code> on the right side of this page.</p>
@@ -1162,16 +1143,16 @@ If you finish this step, please click the next button <code>&gt;</code> on the r
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/klaytn-baobab-setup-workshop/js/clipboard.min.js?1665738331"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/perfect-scrollbar.min.js?1665738331"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/perfect-scrollbar.jquery.min.js?1665738331"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/jquery.sticky.js?1665738331"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/featherlight.min.js?1665738331"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/highlight.pack.js?1665738331"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/clipboard.min.js?1681716535"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/perfect-scrollbar.min.js?1681716535"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/perfect-scrollbar.jquery.min.js?1681716535"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/jquery.sticky.js?1681716535"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/featherlight.min.js?1681716535"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/highlight.pack.js?1681716535"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/klaytn-baobab-setup-workshop/js/modernizr.custom-3.6.0.js?1665738331"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/learn.js?1665738331"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/hugo-learn.js?1665738331"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/modernizr.custom-3.6.0.js?1681716535"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/learn.js?1681716535"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/hugo-learn.js?1681716535"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
