@@ -47,7 +47,7 @@ $ axel -n8 $URL
 (Amazon Linux 2) $ sudo amazon-linux-extras install epel
 (CentOS) $ sudo yum install epel-release -y
 $ sudo yum install axel -y
-$ URL=`curl -s https://packages.klaytn.net/baobab/chaindata/ |grep latest |awk -F'"' '{print $2}'`
+$ URL=`curl -s https://packages.klaytn.net/baobab/pruning-chaindata/ |grep latest |awk -F'"' '{print $2}'`
 $ echo $URL
 https://s3.ap-northeast-2.amazonaws.com/klaytn-chaindata/baobab/pruning/klaytn-baobab-chaindata-20240107010111.tar.gz
 $ axel -n8 $URL
