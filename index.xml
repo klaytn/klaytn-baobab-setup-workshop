@@ -6,152 +6,112 @@
     <description>Recent content in Klaytn - CCO Onboarding - Baobab on Klaytn CCO Onboarding - Baobab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jul 2022 10:01:37 +0900</lastBuildDate><atom:link href="/klaytn-baobab-setup-workshop/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 10:01:37 +0900</lastBuildDate>
+    <atom:link href="/klaytn-baobab-setup-workshop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Firewall Configuration</title>
       <link>/klaytn-baobab-setup-workshop/10_prerequisites/10_firewall_configuration.html</link>
       <pubDate>Mon, 11 Jul 2022 19:18:45 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/10_prerequisites/10_firewall_configuration.html</guid>
-      <description>1. (Only for CN) Firewall configuration 1) If pre-cypress performance test is completed, remove below Klaytn CN&amp;rsquo;s IP address of Pre-cypress from your firewall ingress rule. 18.182.114.118 54.178.128.92
-2) For communication and multichannel between Baobab CN, allow TCP 32323-32324 with below IP addresses to your firewall ingress rule. 54.180.180.202
-54.180.18.176
-52.79.134.72
-52.78.232.39
-3) Additionally, it is required to allow UDP 32323 with the same IP addresses to your firewall ingress rule.</description>
+      <description>1. (Only for CN) Firewall configuration 1) If pre-cypress performance test is completed, remove below Klaytn CN&amp;rsquo;s IP address of Pre-cypress from your firewall ingress rule. 18.182.114.118 54.178.128.92&#xA;2) For communication and multichannel between Baobab CN, allow TCP 32323-32324 with below IP addresses to your firewall ingress rule. 54.180.180.202&#xA;54.180.18.176&#xA;52.79.134.72&#xA;52.78.232.39&#xA;3) Additionally, it is required to allow UDP 32323 with the same IP addresses to your firewall ingress rule.</description>
     </item>
-    
     <item>
       <title>Start the klaytn services</title>
       <link>/klaytn-baobab-setup-workshop/50_start_services/10_start_klaytn_service.html</link>
       <pubDate>Mon, 11 Jul 2022 18:37:31 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/50_start_services/10_start_klaytn_service.html</guid>
       <description>1. Start the Klaytn service, if it is running. 1) For CN, $ sudo systemctl status kcnd $ sudo systemctl start kcnd $ sudo systemctl status kcnd 2) For PN, $ sudo systemctl status kpnd $ sudo systemctl start kpnd $ sudo systemctl status kpnd 3) If the services are not installed from yum, you can start the service like below, $ sudo &amp;lt;installation_path&amp;gt;/kcnd status $ sudo &amp;lt;installation_path&amp;gt;/kcnd start $ sudo &amp;lt;installation_path&amp;gt;/kcnd status If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
-    
     <item>
       <title>Prepare genesis.json for Baobab network</title>
       <link>/klaytn-baobab-setup-workshop/40_configure_network/10_prepare_genesis_for_baobab.html</link>
       <pubDate>Mon, 11 Jul 2022 17:10:58 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/40_configure_network/10_prepare_genesis_for_baobab.html</guid>
       <description>1. Remove or backup existing genesis.json for Pre-cypress. 1) For CN, $ mv &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data/genesis.json &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data/genesis.json.pre-cypress 2) For PN, $ mv &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data/genesis.json &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data/genesis.json.pre-cypress If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
-    
     <item>
       <title>Download the latest Baobab chaindata</title>
       <link>/klaytn-baobab-setup-workshop/30_download_chaindata/10_download_chaindata.html</link>
       <pubDate>Mon, 11 Jul 2022 15:42:53 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/30_download_chaindata/10_download_chaindata.html</guid>
-      <description>1. Download the latest chaindata snapshot from the Baobab snapshot archive. 0) Before proceeding, please check if your disk space is enough to store and extract the Baobab chaindata. ** You can refer to the chaindata size via Boabab snapshot archive where the Baobab chaindata snapshots have been snapshotted.
-1) Download the latest one from the archive. ** Please note that this step will take a lot of time to download since snapshot is more than 100 GB.</description>
+      <description>1. Download the latest chaindata snapshot from the Baobab snapshot archive. 0) Before proceeding, please check if your disk space is enough to store and extract the Baobab chaindata. ** You can refer to the chaindata size via Boabab snapshot archive where the Baobab chaindata snapshots have been snapshotted.&#xA;1) Download the latest one from the archive. ** Please note that this step will take a lot of time to download since snapshot is more than 100 GB.</description>
     </item>
-    
     <item>
       <title>Stop the Klaytn service</title>
       <link>/klaytn-baobab-setup-workshop/20_network_reset/10_stop_klaytn.html</link>
       <pubDate>Mon, 11 Jul 2022 15:16:17 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/20_network_reset/10_stop_klaytn.html</guid>
       <description>1. Stop the Klaytn service, if it is running. 1) For CN, $ sudo systemctl status kcnd $ sudo systemctl stop kcnd $ sudo systemctl status kcnd 2) For PN, $ sudo systemctl status kpnd $ sudo systemctl stop kpnd $ sudo systemctl status kpnd 3) If the services are not installed from yum, you can stop the service like below, $ sudo &amp;lt;installation_path&amp;gt;/kcnd status $ sudo &amp;lt;installation_path&amp;gt;/kcnd stop $ sudo &amp;lt;installation_path&amp;gt;/kcnd status If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
-    
     <item>
       <title>Package Installation</title>
       <link>/klaytn-baobab-setup-workshop/10_prerequisites/20_package_installation.html</link>
       <pubDate>Mon, 11 Jul 2022 19:18:57 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/10_prerequisites/20_package_installation.html</guid>
-      <description>2. Installation of Klaytn packages for CN and PN ** We&amp;rsquo;ve already installed packages during the Pre-cypress stage. If you need to install newly, please refer these documents.
-1) CN - https://docs.klaytn.foundation/node/core-cell/installation-guide/consensus-node-setup/installation-guide 2) PN - https://docs.klaytn.foundation/node/core-cell/installation-guide/proxy-node-setup/installation-guide If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+      <description>2. Installation of Klaytn packages for CN and PN ** We&amp;rsquo;ve already installed packages during the Pre-cypress stage. If you need to install newly, please refer these documents.&#xA;1) CN - https://docs.klaytn.foundation/docs/nodes/core-cell/install/install-consensus-nodes/ 2) PN - https://docs.klaytn.foundation/docs/nodes/core-cell/install/install-proxy-nodes/ If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
-    
     <item>
       <title>Start the Telegraf service</title>
       <link>/klaytn-baobab-setup-workshop/50_start_services/20_start_telegraf_service.html</link>
       <pubDate>Mon, 11 Jul 2022 18:39:03 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/50_start_services/20_start_telegraf_service.html</guid>
       <description>2. Start the Telegraf service, if it is running. 1) For both CN and PN, $ sudo systemctl status telegraf $ sudo systemctl start telegraf $ sudo systemctl status telegraf If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
-    
     <item>
       <title>Node Configuration</title>
       <link>/klaytn-baobab-setup-workshop/40_configure_network/20_node_configuration.html</link>
       <pubDate>Mon, 11 Jul 2022 17:55:05 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/40_configure_network/20_node_configuration.html</guid>
-      <description>1. Modify network, discovery and boot node information. ** Note that CN and PN have some different information.
-1) For CN, your configuration should be modified as shown below. $ egrep &amp;#34;^NETWORK|NO_DISCOVER|BOOTNODES&amp;#34; /etc/kcnd/conf/kcnd.conf NETWORK=&amp;#34;baobab&amp;#34; NETWORK_ID= NO_DISCOVER=0 # setting 1 to disable discovery BOOTNODES=&amp;#34;kni://979159c738bb0c8c60b36267c56d2b4d4a995326be666460c3d612856caab522ebe6f81ea5cdbb605051f12cbf8f787ce0f172256545a5b3400c751afbdcd0c8@13.209.190.55:32323?discport=32323&amp;amp;ntype=bn&amp;#34; 2) For PN, your configuration should be modified as shown below. $ egrep &amp;#34;^NETWORK|NO_DISCOVER|BOOTNODES&amp;#34; /etc/kpnd/conf/kpnd.conf NETWORK=&amp;#34;baobab&amp;#34; NETWORK_ID= NO_DISCOVER=1 # setting 1 to disable discovery BOOTNODES=&amp;#34;&amp;#34; 2. Check if the static-nodes.</description>
+      <description>1. Modify network, discovery and boot node information. ** Note that CN and PN have some different information.&#xA;1) For CN, your configuration should be modified as shown below. $ egrep &amp;#34;^NETWORK|NO_DISCOVER|BOOTNODES&amp;#34; /etc/kcnd/conf/kcnd.conf NETWORK=&amp;#34;baobab&amp;#34; NETWORK_ID= NO_DISCOVER=0 # setting 1 to disable discovery BOOTNODES=&amp;#34;kni://979159c738bb0c8c60b36267c56d2b4d4a995326be666460c3d612856caab522ebe6f81ea5cdbb605051f12cbf8f787ce0f172256545a5b3400c751afbdcd0c8@13.209.190.55:32323?discport=32323&amp;amp;ntype=bn&amp;#34; 2) For PN, your configuration should be modified as shown below. $ egrep &amp;#34;^NETWORK|NO_DISCOVER|BOOTNODES&amp;#34; /etc/kpnd/conf/kpnd.conf NETWORK=&amp;#34;baobab&amp;#34; NETWORK_ID= NO_DISCOVER=1 # setting 1 to disable discovery BOOTNODES=&amp;#34;&amp;#34; 2. Check if the static-nodes.</description>
     </item>
-    
     <item>
       <title>Extract the chaindata</title>
       <link>/klaytn-baobab-setup-workshop/30_download_chaindata/20_unarchive_chaindata.html</link>
       <pubDate>Mon, 11 Jul 2022 15:43:06 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/30_download_chaindata/20_unarchive_chaindata.html</guid>
-      <description>2. Extract the chaindata downloaded to the DATA_DIR. 1) For CN, $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz ** If you want to reduce the time for extracting, please refer this pigz example. (Amazon Linux 2) $ sudo amazon-linux-extras install epel (CentOS) $ sudo yum install epel-release -y $ sudo yum install pigz $ tar -I pigz -C &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz
-2) For PN, $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data -xvf klaytn-baobab-chaindata-20220714010711.tar.gz If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+      <description>2. Extract the chaindata downloaded to the DATA_DIR. 1) For CN, $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data -xvf klaytn-baobab-chaindata-20240107010111.tar.gz --exclude klay/chaindata/receipts ** If you want to reduce the time for extracting, please refer this pigz example. (Amazon Linux 2) $ sudo amazon-linux-extras install epel (CentOS) $ sudo yum install epel-release -y $ sudo yum install pigz $ tar -I pigz -C &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data -xvf klaytn-baobab-chaindata-20240107010111.tar.gz --exclude klay/chaindata/receipts&#xA;2) For PN1, $ tar -C &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data -xvf klaytn-baobab-chaindata-20240107010111.</description>
     </item>
-    
     <item>
       <title>Stop the Telegraf service</title>
       <link>/klaytn-baobab-setup-workshop/20_network_reset/20_stop_telegraf.html</link>
       <pubDate>Mon, 11 Jul 2022 15:16:34 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/20_network_reset/20_stop_telegraf.html</guid>
       <description>2. Stop the Telegraf service, if it is running. 1) For both CN and PN, $ sudo systemctl status telegraf $ sudo systemctl stop telegraf $ sudo systemctl status telegraf If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
-    
     <item>
       <title>Remove Chaindata</title>
       <link>/klaytn-baobab-setup-workshop/30_download_chaindata/30_remove_chaindata.html</link>
       <pubDate>Thu, 14 Jul 2022 19:26:47 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/30_download_chaindata/30_remove_chaindata.html</guid>
-      <description>3. You can remove the chaindata downloaded, if the previous step is completed. 1) For both CN and PN, $ rm klaytn-baobab-chaindata-20220714010711.tar.gz If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+      <description>3. You can remove the chaindata downloaded, if the previous step is completed. 1) For both CN and PN, $ rm klaytn-baobab-chaindata-****************.tar.gz If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
-    
     <item>
       <title>Check the services</title>
       <link>/klaytn-baobab-setup-workshop/50_start_services/30_check_the_services.html</link>
       <pubDate>Mon, 11 Jul 2022 18:42:35 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/50_start_services/30_check_the_services.html</guid>
-      <description>3. Watch the service log to confirm if your nodes are correctly joined. ** If the node is not a proposer at that block, and the consensus is successful, the node have executed(==validates) the block. In other words, a block is inserted. _** You can refer this document for more details about node log.
-1) For CN, $ tail &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/log/kcnd.out INFO Inserted a new block number=14 hash=13cbfc…f007fc txs=0 gas=0 elapsed=793.</description>
+      <description>3. Watch the service log to confirm if your nodes are correctly joined. ** If the node is not a proposer at that block, and the consensus is successful, the node have executed(==validates) the block. In other words, a block is inserted. _** You can refer this document for more details about node log.&#xA;1) For CN, $ tail &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/log/kcnd.out INFO Inserted a new block number=14 hash=13cbfc…f007fc txs=0 gas=0 elapsed=793.</description>
     </item>
-    
     <item>
       <title>Remove chaindata and log</title>
       <link>/klaytn-baobab-setup-workshop/20_network_reset/30_remove_data_and_log.html</link>
       <pubDate>Mon, 11 Jul 2022 15:17:04 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/20_network_reset/30_remove_data_and_log.html</guid>
       <description>3. Remove existing chaindata and log for pre-cypress. 0) During pre-cypress, you did set &amp;lt;klaytn_home_path&amp;gt; for Ansible deployment. But you can check this out if you can&amp;rsquo;t remember where your data directory is located. $ grep &amp;#34;DATA_DIR&amp;#34; /etc/kpnd/conf/kpnd.conf 1) For CN, $ sudo rm -Rf &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data/klay/chaindata $ sudo rm -Rf &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/data/klay/lightchaindata $ sudo rm -Rf &amp;lt;your_klaytn_home_path&amp;gt;/kcnd/log/* 2) For PN, $ sudo rm -Rf &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data/klay/chaindata $ sudo rm -Rf &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/data/klay/lightchaindata $ sudo rm -Rf &amp;lt;your_klaytn_home_path&amp;gt;/kpnd/log/* If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
-    
     <item>
       <title>Check Monitoring Dashboard</title>
       <link>/klaytn-baobab-setup-workshop/50_start_services/40_check_monitoring_dashboard.html</link>
       <pubDate>Thu, 14 Jul 2022 19:11:35 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/50_start_services/40_check_monitoring_dashboard.html</guid>
-      <description>4. Take a look at Grafana dashboard to confirm if your nodes are correctly joined to Baobab network. Link : Baobab Grafana ** You can refer this document to check your services further.
-https://docs.klaytn.foundation/node/core-cell/installation-guide/testing-the-core-cell#kcn-console-kpn-console If your nodes are shown and CN/PN Inter Connections looks 2 in this dashboard, everything is configured normally. Please send a message to Klaytn DevOps by Slack channel #cco_7th_batch. If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+      <description>4. Take a look at Grafana dashboard to confirm if your nodes are correctly joined to Baobab network. Link : Baobab Grafana ** You can refer this document to check your services further.&#xA;https://docs.klaytn.foundation/node/core-cell/installation-guide/testing-the-core-cell#kcn-console-kpn-console If your nodes are shown and CN/PN Inter Connections looks 2 in this dashboard, everything is configured normally. Please send a message to Klaytn DevOps by Slack channel #cco_7th_batch. If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
-    
     <item>
       <title>Telegraf Configuration</title>
       <link>/klaytn-baobab-setup-workshop/40_configure_network/30_telegraf_configuration.html</link>
       <pubDate>Thu, 14 Jul 2022 16:44:50 +0900</pubDate>
-      
       <guid>/klaytn-baobab-setup-workshop/40_configure_network/30_telegraf_configuration.html</guid>
       <description>1. To monitor your nodes in Baobab Dashboard, please change the influxdb configuration as below: 1) For both CN and PN, $ grep -A2 &amp;#34;influxdb&amp;#34; /etc/telegraf/telegraf.d/klaytn.conf [[outputs.influxdb]] urls = [ &amp;#34;http://15.164.55.202:8086&amp;#34; ] database = &amp;#34;klaytn_beta_baobab&amp;#34; If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
-    
   </channel>
 </rss>
