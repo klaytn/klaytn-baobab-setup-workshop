@@ -19,13 +19,23 @@ NO_DISCOVER=0 # setting 1 to disable discovery
 BOOTNODES="kni://979159c738bb0c8c60b36267c56d2b4d4a995326be666460c3d612856caab522ebe6f81ea5cdbb605051f12cbf8f787ce0f172256545a5b3400c751afbdcd0c8@13.209.190.55:32323?discport=32323&ntype=bn"
 {{< /highlight >}}
 
-##### 2) For PN, your configuration should be modified as shown below.
+##### 2) For PN1, your configuration should be modified as shown below.
 {{< highlight html >}}
 $ egrep "^NETWORK|NO_DISCOVER|BOOTNODES" /etc/kpnd/conf/kpnd.conf
 NETWORK="baobab"
 NETWORK_ID=
 NO_DISCOVER=1 # setting 1 to disable discovery
 BOOTNODES=""
+{{< /highlight >}}
+
+##### 3) For PN2, your configuration should be modified as shown below.
+{{< highlight html >}}
+$ egrep "^NETWORK|NO_DISCOVER|BOOTNODES|ADDITIONAL" /etc/kpnd/conf/kpnd.conf
+NETWORK="baobab"
+NETWORK_ID=
+NO_DISCOVER=1 # setting 1 to disable discovery
+BOOTNODES=""
+ADDITIONAL="--state.live-pruning"
 {{< /highlight >}}
 {{< line_break >}}
 
