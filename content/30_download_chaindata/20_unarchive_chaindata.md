@@ -11,15 +11,10 @@ draft: false
 
 ##### 1) For CN,
 {{< highlight html >}}
-$ tar -C <your_klaytn_home_path>/kcnd/data -xvf klaytn-baobab-chaindata-20240107010111.tar.gz --exclude klay/chaindata/receipts
+$ tar -C <your_klaytn_home_path>/kcnd/data -xvf klaytn-baobab-pruning-chaindata-20240107010111.tar.gz --exclude klay/chaindata/receipts
 {{< /highlight >}}
 
-##### 2) For PN1,
-{{< highlight html >}}
-$ tar -C <your_klaytn_home_path>/kpnd/data -xvf klaytn-baobab-chaindata-20240107010111.tar.gz --exclude klay/chaindata/receipts
-{{< /highlight >}}
-
-##### 3) For PN2,
+##### 2) For PN,
 {{< highlight html >}}
 $ tar -C <your_klaytn_home_path>/kpnd/data -xvf klaytn-baobab-pruning-chaindata-20240107010111.tar.gz --exclude klay/chaindata/receipts
 {{< /highlight >}}
@@ -29,7 +24,7 @@ _** If you want to reduce the time for extracting, please refer this [pigz](http
 (Amazon Linux 2) $ sudo amazon-linux-extras install epel
 (CentOS) $ sudo yum install epel-release -y
 $ sudo yum install pigz
-$ tar -I pigz -C <your_klaytn_home_path>/k*nd/data -xvf klaytn-baobab-chaindata-20240107010111.tar.gz --exclude klay/chaindata/receipts
+$ tar -I pigz -C <your_klaytn_home_path>/k*nd/data -xvf klaytn-baobab-pruning-chaindata-20240107010111.tar.gz --exclude klay/chaindata/receipts
 {{< /highlight >}}
 
 {{< line_break >}}
