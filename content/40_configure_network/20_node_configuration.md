@@ -23,7 +23,7 @@ ADDITIONAL="--state.trie-cache-limit 5000 --state.live-pruning"
 ##### 2) For PN
 {{< highlight html >}}
 $ egrep "^NETWORK|NO_DISCOVER|BOOTNODES|ADDITIONAL" /etc/kpnd/conf/kpnd.conf
-NETWORK="cypress"
+NETWORK="baobab"
 NETWORK_ID=
 NO_DISCOVER=1 # setting 1 to disable discovery
 BOOTNODES=""
