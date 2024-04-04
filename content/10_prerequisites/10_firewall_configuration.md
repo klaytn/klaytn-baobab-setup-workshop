@@ -10,8 +10,8 @@ draft: false
 #### 1. *(Only for CN)* Firewall configuration
 
 ##### 1) If pre-cypress performance test is completed, remove below Klaytn CN's IP address of Pre-cypress from your firewall ingress rule.
-```61.109.238.31```
-```52.199.8.244```
+```Pre Cyprss KF CN IP```
+```Pre Cyprss KF BN IP```
 
 ##### 2) For communication and multichannel between Baobab CN, allow TCP ```32323-32324``` with below IP addresses to your firewall ingress rule.
 ```54.180.180.202```   
