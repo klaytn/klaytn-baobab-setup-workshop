@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/klaytn-baobab-setup-workshop/images/Logo-2.png" type="image/x-icon" />
 
-    <title>Prepare genesis.json for Baobab network - Klaytn CCO Onboarding - Baobab</title>
+    <title>replace_bls-key - Klaytn CCO Onboarding - Baobab</title>
 
     
     <link href="/klaytn-baobab-setup-workshop/css/nucleus.css?1717025178" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/klaytn-baobab-setup-workshop/40_configure_network/10_prepare_genesis_for_baobab.html">
+  <body class="" data-url="/klaytn-baobab-setup-workshop/20_network_reset/40_replace_bls-key.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -159,7 +159,7 @@
   
     
     <li data-nav-id="/20_network_reset.html" title="Reset Network Configuration" class="dd-item
-        
+        parent
         
         
         ">
@@ -250,7 +250,7 @@
  
   
     
-      <li data-nav-id="/20_network_reset/40_replace_bls-key.html" title="replace_bls-key" class="dd-item ">
+      <li data-nav-id="/20_network_reset/40_replace_bls-key.html" title="replace_bls-key" class="dd-item active">
         <a href="/klaytn-baobab-setup-workshop/20_network_reset/40_replace_bls-key.html">
         <b>C. </b>replace_bls-key
         <i class="fas fa-check read-icon"></i>
@@ -378,7 +378,7 @@
   
     
     <li data-nav-id="/40_configure_network.html" title="Configure Baobab Network" class="dd-item
-        parent
+        
         
         
         ">
@@ -406,7 +406,7 @@
  
   
     
-      <li data-nav-id="/40_configure_network/10_prepare_genesis_for_baobab.html" title="Prepare genesis.json for Baobab network" class="dd-item active">
+      <li data-nav-id="/40_configure_network/10_prepare_genesis_for_baobab.html" title="Prepare genesis.json for Baobab network" class="dd-item ">
         <a href="/klaytn-baobab-setup-workshop/40_configure_network/10_prepare_genesis_for_baobab.html">
         <b>A. </b>Prepare genesis.json for Baobab network
         <i class="fas fa-check read-icon"></i>
@@ -680,7 +680,7 @@
                   <span class="links">
                  
                  
-                   Prepare genesis.json for Baobab network
+                   replace_bls-key
                  
                   </span>
                 </div>
@@ -711,7 +711,7 @@
           
             <h1>
               
-              Prepare genesis.json for Baobab network
+              replace_bls-key
             </h1>
           
 
@@ -720,11 +720,22 @@
 
 <br />
 
-<h4 id="1-remove-or-backup-existing-genesisjson-for-pre-cypress">1. Remove or backup existing genesis.json for Pre-cypress.</h4>
-<h5 id="1-for-cn">1) For CN,</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ mv &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kcnd/data/genesis.json &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kcnd/data/genesis.json.pre-cypress </span></span></code></pre></div>
-<h5 id="2-for-pn">2) For PN,</h5>
-<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ mv &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kpnd/data/genesis.json &lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/kpnd/data/genesis.json.pre-cypress</span></span></code></pre></div>
+<h4 id="4-replace-bls-nodekey-on-the-cn---except-bughole--certik">4. Replace bls-nodekey on the CN - Except Bughole &amp; Certik.</h4>
+<blockquote>
+<p>BLS-Nodekey is your Private key what you generate with Klay Tool.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/klaytn/klaytn-pre-cypress-setup-workshop/main/static/images/nodekey.png" alt="CN"></p>
+<p>In order to operate a node, a <code>bls-nodekey</code> is required. The KCN binary will create a new one for you if you do not have it. <br />
+
+If you have one, you need to put your <code>bls-nodekey</code> into the <code>data</code> directory.</p>
+<h5 id="1-delete-auto-generated-bls-key">1) Delete auto-generated bls-key</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ mv /var/kcnd/data/bls-nodekey /var/kcnd/data/bls-nodekey_temp</span></span></code></pre></div>
+<br />
+
+<h5 id="2-create-bls-nodekey-file">2) Create bls-nodekey file</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ vi /var/kcnd/data/bls-nodekey</span></span></code></pre></div>
+<p><br />
+
 <br />
 </p>
 <p><br />
@@ -879,6 +890,74 @@ If you finish this step, please click the next button <code>&gt;</code> on the r
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -926,74 +1005,6 @@ If you finish this step, please click the next button <code>&gt;</code> on the r
             
             
                 
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1130,10 +1141,10 @@ If you finish this step, please click the next button <code>&gt;</code> on the r
 	 
 	 
 		
-			<a class="nav nav-prev" href="/klaytn-baobab-setup-workshop/40_configure_network.html" title="Configure Baobab Network"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/klaytn-baobab-setup-workshop/20_network_reset/30_remove_data_and_log.html" title="Remove chaindata and log"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/klaytn-baobab-setup-workshop/40_configure_network/20_node_configuration.html" title="Node Configuration" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/klaytn-baobab-setup-workshop/30_download_chaindata.html" title="Fast Sync with Baobab" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
