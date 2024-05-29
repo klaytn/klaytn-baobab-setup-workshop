@@ -1,4 +1,5 @@
 # IntelliJ IDE
 .idea
+.DS_Store
 # Hugo public
 public

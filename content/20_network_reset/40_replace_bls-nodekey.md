@@ -1,5 +1,5 @@
 ---
-title: "replace_bls-key"
+title: "replace_bls-nodekey"
 date: 2022-07-11T15:17:04+09:00
 weight: 30
 pre: "<b>C. </b>"
