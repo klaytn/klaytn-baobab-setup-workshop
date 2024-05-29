@@ -105,8 +105,8 @@
 	"content": "\n3. Remove existing chaindata and log for pre-cypress. 0) During pre-cypress, you did set \u0026lt;klaytn_home_path\u0026gt; for Ansible deployment. But you can check this out if you can\u0026rsquo;t remember where your data directory is located. $ grep \u0026#34;DATA_DIR\u0026#34; /etc/kpnd/conf/kpnd.conf 1) For CN, $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data/klay/chaindata $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/data/klay/lightchaindata $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kcnd/log/* 2) For PN, $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data/klay/chaindata $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/data/klay/lightchaindata $ sudo rm -Rf \u0026lt;your_klaytn_home_path\u0026gt;/kpnd/log/* If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
 },
 {
-	"uri": "/klaytn-baobab-setup-workshop/20_network_reset/40_replace_bls-key.html",
-	"title": "replace_bls-key",
+	"uri": "/klaytn-baobab-setup-workshop/20_network_reset/40_replace_bls-nodekey.html",
+	"title": "replace_bls-nodekey",
 	"tags": [],
 	"description": "",
 	"content": "\n4. Replace bls-nodekey on the CN - Except Bughole \u0026amp; Certik. BLS-Nodekey is your Private key what you generate with Klay Tool.\nIn order to operate a node, a bls-nodekey is required. The KCN binary will create a new one for you if you do not have it. If you have one, you need to put your bls-nodekey into the data directory.\n1) Delete auto-generated bls-key $ mv /var/kcnd/data/bls-nodekey /var/kcnd/data/bls-nodekey_temp 2) Create bls-nodekey file $ vi /var/kcnd/data/bls-nodekey If you finish this step, please click the next button \u0026gt; on the right side of this page.\n"
