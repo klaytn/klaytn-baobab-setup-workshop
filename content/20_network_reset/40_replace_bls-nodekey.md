@@ -16,16 +16,16 @@ draft: false
 In order to operate a node, a `bls-nodekey` is required. The KCN binary will create a new one for you if you do not have it. {{< line_break >}}
 If you have one, you need to put your `bls-nodekey` into the `data` directory.
 
-##### 1) Delete auto-generated bls-key
+##### 1) Rename auto-generated bls-key - will be deleted later
 {{< highlight html >}}
-$ mv /var/kcnd/data/klay/bls-nodekey /var/kcnd/data/klay/bls-nodekey_temp
+$ mv /<your_klaytn_home_path>/data/klay/bls-nodekey /<your_klaytn_home_path>/data/klay/bls-nodekey_temp
 {{< /highlight >}}
 
 {{< line_break >}}
 
 ##### 2) Create bls-nodekey file
 {{< highlight html >}}
-$ vi /var/kcnd/data/bls-nodekey
+$ vi /<your_klaytn_home_path>/data/bls-nodekey
 {{< /highlight >}}
 
 
