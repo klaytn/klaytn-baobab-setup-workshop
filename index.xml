@@ -104,7 +104,7 @@
       <link>/klaytn-baobab-setup-workshop/20_network_reset/40_replace_bls-nodekey.html</link>
       <pubDate>Mon, 11 Jul 2022 15:17:04 +0900</pubDate>
       <guid>/klaytn-baobab-setup-workshop/20_network_reset/40_replace_bls-nodekey.html</guid>
-      <description>4. Replace bls-nodekey on the CN - Except Bughole &amp;amp; Certik. BLS-Nodekey is your Private key what you generate with Klay Tool.&#xA;In order to operate a node, a bls-nodekey is required. The KCN binary will create a new one for you if you do not have it. If you have one, you need to put your bls-nodekey into the data directory.&#xA;1) Rename auto-generated bls-key - will be deleted later $ mv /&amp;lt;your_klaytn_home_path&amp;gt;/data/klay/bls-nodekey /&amp;lt;your_klaytn_home_path&amp;gt;/data/klay/bls-nodekey_temp 2) Create bls-nodekey file $ vi /&amp;lt;your_klaytn_home_path&amp;gt;/data/bls-nodekey If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+      <description>4. Replace bls-nodekey on the CN - Except Bughole &amp;amp; Certik. BLS-Nodekey is your Private key what you generate with Klay Tool.&#xA;In order to operate a node, a bls-nodekey is required. The KCN binary will create a new one for you if you do not have it. If you have one, you need to put your bls-nodekey into the data directory.&#xA;1) Rename auto-generated bls-key - will be deleted later $ mv /&amp;lt;Data_DIR&amp;gt;/klay/bls-nodekey /&amp;lt;your_klaytn_home_path&amp;gt;/data/klay/bls-nodekey_temp 2) Create bls-nodekey file $ vi /&amp;lt;Data_DIR&amp;gt;/bls-nodekey If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
     <item>
       <title>Check Monitoring Dashboard</title>

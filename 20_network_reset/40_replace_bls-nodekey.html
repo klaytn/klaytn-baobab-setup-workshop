@@ -12,22 +12,22 @@
     <title>replace_bls-nodekey - Klaytn CCO Onboarding - Baobab</title>
 
     
-    <link href="/klaytn-baobab-setup-workshop/css/nucleus.css?1717118584" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/fontawesome-all.min.css?1717118584" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/hybrid.css?1717118584" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/featherlight.min.css?1717118584" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/perfect-scrollbar.min.css?1717118584" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/auto-complete.css?1717118584" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/atom-one-dark-reasonable.css?1717118584" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/theme.css?1717118584" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/tabs.css?1717118584" rel="stylesheet">
-    <link href="/klaytn-baobab-setup-workshop/css/hugo-theme.css?1717118584" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/nucleus.css?1717118836" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/fontawesome-all.min.css?1717118836" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/hybrid.css?1717118836" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/featherlight.min.css?1717118836" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/perfect-scrollbar.min.css?1717118836" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/auto-complete.css?1717118836" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/atom-one-dark-reasonable.css?1717118836" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/theme.css?1717118836" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/tabs.css?1717118836" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/hugo-theme.css?1717118836" rel="stylesheet">
     
-    <link href="/klaytn-baobab-setup-workshop/css/theme-klaytn.css?1717118584" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/theme-klaytn.css?1717118836" rel="stylesheet">
     
-    <link href="/klaytn-baobab-setup-workshop/css/foo.css?1717118584" rel="stylesheet"><link href="/klaytn-baobab-setup-workshop/css/bar.css?1717118584" rel="stylesheet">
+    <link href="/klaytn-baobab-setup-workshop/css/foo.css?1717118836" rel="stylesheet"><link href="/klaytn-baobab-setup-workshop/css/bar.css?1717118836" rel="stylesheet">
 
-    <script src="/klaytn-baobab-setup-workshop/js/jquery-3.3.1.min.js?1717118584"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/jquery-3.3.1.min.js?1717118836"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/lunr.min.js?1717118584"></script>
-<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/auto-complete.js?1717118584"></script>
+<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/lunr.min.js?1717118836"></script>
+<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/auto-complete.js?1717118836"></script>
 <script type="text/javascript">
     
         var baseurl = "\/klaytn-baobab-setup-workshop\/";
     
 </script>
-<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/search.js?1717118584"></script>
+<script type="text/javascript" src="/klaytn-baobab-setup-workshop/js/search.js?1717118836"></script>
 
     
   </div>
@@ -729,11 +729,11 @@
 
 If you have one, you need to put your <code>bls-nodekey</code> into the <code>data</code> directory.</p>
 <h5 id="1-rename-auto-generated-bls-key---will-be-deleted-later">1) Rename auto-generated bls-key - will be deleted later</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ mv /&lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/data/klay/bls-nodekey /&lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/data/klay/bls-nodekey_temp</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ mv /&lt;<span style="color:#f92672">Data_DIR</span>&gt;/klay/bls-nodekey /&lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/data/klay/bls-nodekey_temp</span></span></code></pre></div>
 <br />
 
 <h5 id="2-create-bls-nodekey-file">2) Create bls-nodekey file</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ vi /&lt;<span style="color:#f92672">your_klaytn_home_path</span>&gt;/data/bls-nodekey</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ vi /&lt;<span style="color:#f92672">Data_DIR</span>&gt;/bls-nodekey</span></span></code></pre></div>
 <p><br />
 
 <br />
@@ -1154,16 +1154,16 @@ If you finish this step, please click the next button <code>&gt;</code> on the r
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/klaytn-baobab-setup-workshop/js/clipboard.min.js?1717118584"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/perfect-scrollbar.min.js?1717118584"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/perfect-scrollbar.jquery.min.js?1717118584"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/jquery.sticky.js?1717118584"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/featherlight.min.js?1717118584"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/highlight.pack.js?1717118584"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/clipboard.min.js?1717118836"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/perfect-scrollbar.min.js?1717118836"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/perfect-scrollbar.jquery.min.js?1717118836"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/jquery.sticky.js?1717118836"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/featherlight.min.js?1717118836"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/highlight.pack.js?1717118836"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/klaytn-baobab-setup-workshop/js/modernizr.custom-3.6.0.js?1717118584"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/learn.js?1717118584"></script>
-    <script src="/klaytn-baobab-setup-workshop/js/hugo-learn.js?1717118584"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/modernizr.custom-3.6.0.js?1717118836"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/learn.js?1717118836"></script>
+    <script src="/klaytn-baobab-setup-workshop/js/hugo-learn.js?1717118836"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
