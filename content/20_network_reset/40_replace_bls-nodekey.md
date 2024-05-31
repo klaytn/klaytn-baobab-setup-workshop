@@ -18,7 +18,7 @@ If you have one, you need to put your `bls-nodekey` into the `data` directory.
 
 ##### 1) Delete auto-generated bls-key
 {{< highlight html >}}
-$ mv /var/kcnd/data/bls-nodekey /var/kcnd/data/bls-nodekey_temp
+$ mv /var/kcnd/data/klay/bls-nodekey /var/kcnd/data/klay/bls-nodekey_temp
 {{< /highlight >}}
 
 {{< line_break >}}
