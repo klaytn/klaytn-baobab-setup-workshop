@@ -18,6 +18,7 @@ draft: false
 ```54.180.18.176```   
 ```52.79.134.72```   
 ```52.78.232.39```
+```13.124.59.131```
 
 ##### 3) Additionally, it is required to allow UDP ``` 32323 ``` with the same IP addresses to your firewall ingress rule.
 ```54.180.180.202```   
