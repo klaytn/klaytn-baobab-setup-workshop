@@ -10,7 +10,7 @@ pre = "<b>5. </b>"
 
 # Start the services
 
-#### Now, we are ready to start Klaytn service for Baobab.
+#### Now, we are ready to start Klaytn service for Kairos.
 
 
 {{< line_break >}}

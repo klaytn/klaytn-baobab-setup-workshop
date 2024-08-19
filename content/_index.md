@@ -1,5 +1,5 @@
 +++
-title = "Klaytn - CCO Onboarding - Baobab"
+title = "Klaytn - CCO Onboarding - Kairos"
 date = 2022-07-11T10:01:37+09:00
 weight = 0
 chapter = true
@@ -9,7 +9,7 @@ draft = false
 
 
 ![Klaytn Logo](/images/Logo-1.png)
-# CCO Onboarding - Baobab
+# CCO Onboarding - Kairos
    
-This online instruction let you join Klaytn Baobab network.    
+This online instruction let you join Klaytn Kairos network.    
 If Consensus/Proxy node setup is already completed, you can start with chapter 2.   

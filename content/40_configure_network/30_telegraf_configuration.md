@@ -7,7 +7,7 @@ draft: false
 ---
 
 {{< line_break >}}
-#### 1. To monitor your nodes in Baobab Dashboard, please change the influxdb configuration as below:
+#### 1. To monitor your nodes in Kairos Dashboard, please change the influxdb configuration as below:
 
 ##### 1) For both CN and PN,
 {{< highlight html >}}

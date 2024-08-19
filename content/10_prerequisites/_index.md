@@ -10,7 +10,7 @@ draft = false
 ### Chapter 1
 
 # Prerequisites
-The prerequisites for joining Baobab network are covered in this chapter. 
+The prerequisites for joining Kairos network are covered in this chapter. 
 
 {{< line_break >}}
 {{< line_break >}}
