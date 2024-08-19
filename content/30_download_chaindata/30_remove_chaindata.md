@@ -11,7 +11,7 @@ draft: false
 
 ##### 1) For both CN and PN,
 {{< highlight html >}}
-$ rm klaytn-baobab-chaindata-****************.tar.gz
+$ rm kaia-kairos-chaindata-****************.tar.gz
 {{< /highlight >}}
 
 {{< line_break >}}

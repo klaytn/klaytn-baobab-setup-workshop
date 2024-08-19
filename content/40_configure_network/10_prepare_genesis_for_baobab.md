@@ -1,5 +1,5 @@
 ---
-title: "Prepare genesis.json for Baobab network"
+title: "Prepare genesis.json for Kairos network"
 date: 2022-07-11T17:10:58+09:00
 weight: 10
 pre: "<b>A. </b>"

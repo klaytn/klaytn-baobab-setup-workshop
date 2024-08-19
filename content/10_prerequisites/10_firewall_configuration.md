@@ -13,7 +13,7 @@ draft: false
 ```Pre Cyprss KF CN IP```
 ```Pre Cyprss KF BN IP```
 
-##### 2) For communication and multichannel between Baobab CN, allow TCP ```32323-32324``` with below IP addresses to your firewall ingress rule.
+##### 2) For communication and multichannel between Kairos CN, allow TCP ```32323-32324``` with below IP addresses to your firewall ingress rule.
 ```54.180.180.202```   
 ```54.180.18.176```   
 ```52.79.134.72```   
@@ -35,7 +35,7 @@ IPv4          |    All traffic    |    All         |    All           |    0.0.0
 ```
 
 {{< line_break >}}   
-*Please note that the above four IP addresses are attached to the Klaytn Baobab CNs.*
+*Please note that the above four IP addresses are attached to the Klaytn Kairos CNs.*
 
 {{< line_break >}}
 If you finish this step, please click the next button ```>``` on the right side of this page.
