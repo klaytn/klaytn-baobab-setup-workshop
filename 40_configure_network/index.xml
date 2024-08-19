@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Configure Baobab Network on Klaytn CCO Onboarding - Baobab</title>
+    <title>Configure Kairos Network on Klaytn CCO Onboarding - Baobab</title>
     <link>/klaytn-baobab-setup-workshop/40_configure_network.html</link>
-    <description>Recent content in Configure Baobab Network on Klaytn CCO Onboarding - Baobab</description>
+    <description>Recent content in Configure Kairos Network on Klaytn CCO Onboarding - Baobab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Jul 2022 16:44:50 +0900</lastBuildDate>
     <atom:link href="/klaytn-baobab-setup-workshop/40_configure_network/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Prepare genesis.json for Baobab network</title>
+      <title>Prepare genesis.json for Kairos network</title>
       <link>/klaytn-baobab-setup-workshop/40_configure_network/10_prepare_genesis_for_baobab.html</link>
       <pubDate>Mon, 11 Jul 2022 17:10:58 +0900</pubDate>
       <guid>/klaytn-baobab-setup-workshop/40_configure_network/10_prepare_genesis_for_baobab.html</guid>
@@ -27,7 +27,7 @@
       <link>/klaytn-baobab-setup-workshop/40_configure_network/30_telegraf_configuration.html</link>
       <pubDate>Thu, 14 Jul 2022 16:44:50 +0900</pubDate>
       <guid>/klaytn-baobab-setup-workshop/40_configure_network/30_telegraf_configuration.html</guid>
-      <description>1. To monitor your nodes in Baobab Dashboard, please change the influxdb configuration as below: 1) For both CN and PN, $ grep -A2 &amp;#34;influxdb&amp;#34; /etc/telegraf/telegraf.d/klaytn.conf [[outputs.influxdb]] urls = [ &amp;#34;http://15.164.55.202:8086&amp;#34; ] database = &amp;#34;klaytn_beta_baobab&amp;#34; If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+      <description>1. To monitor your nodes in Kairos Dashboard, please change the influxdb configuration as below: 1) For both CN and PN, $ grep -A2 &amp;#34;influxdb&amp;#34; /etc/telegraf/telegraf.d/klaytn.conf [[outputs.influxdb]] urls = [ &amp;#34;http://15.164.55.202:8086&amp;#34; ] database = &amp;#34;klaytn_beta_baobab&amp;#34; If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
   </channel>
 </rss>

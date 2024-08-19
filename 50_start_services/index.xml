@@ -34,7 +34,7 @@
       <link>/klaytn-baobab-setup-workshop/50_start_services/40_check_monitoring_dashboard.html</link>
       <pubDate>Thu, 14 Jul 2022 19:11:35 +0900</pubDate>
       <guid>/klaytn-baobab-setup-workshop/50_start_services/40_check_monitoring_dashboard.html</guid>
-      <description>4. Take a look at Grafana dashboard to confirm if your nodes are correctly joined to Baobab network. Link : Baobab Grafana ** You can refer this document to check your services further.&#xA;https://docs.klaytn.foundation/node/core-cell/installation-guide/testing-the-core-cell#kcn-console-kpn-console If your nodes are shown and CN/PN Inter Connections looks 2 in this dashboard, everything is configured normally. Please send a message to Klaytn DevOps by Slack channel #cco_7th_batch. If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
+      <description>4. Take a look at Grafana dashboard to confirm if your nodes are correctly joined to Kairos network. Link : Kairos Grafana ** You can refer this document to check your services further.&#xA;https://docs.klaytn.foundation/node/core-cell/installation-guide/testing-the-core-cell#kcn-console-kpn-console If your nodes are shown and CN/PN Inter Connections looks 2 in this dashboard, everything is configured normally. Please send a message to Klaytn DevOps by Slack channel #cco_7th_batch. If you finish this step, please click the next button &amp;gt; on the right side of this page.</description>
     </item>
   </channel>
 </rss>
