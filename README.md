@@ -1,6 +1,6 @@
-# Klaytn Workshop - Baobab Setup
+# Kaia Workshop - Kairos Setup
 
-![Klaytn Docs](images/klaytn.png)
+![Kaia Docs](/images/Kaia-docs.png)
 
 ## Index
   - [Overview](#overview) 
@@ -13,10 +13,10 @@
 
 ## Overview
 <!-- Write Overview about this project -->
-**If you want to join Klaytn Baobab network, this workshop will be the best guidance. Below are included in this workshop.**
+**If you want to join Kaia Kairos network, this workshop will be the best guidance. Below are included in this workshop.**
 - Prerequisites (Firewall & Package Installation)
-- Chaindata Fast sync with Baobab
-- Baobab Network Configuration
+- Chaindata Fast sync with Kairos
+- Kairos Network Configuration
 - Service Status Management
 
 ## How this repository works
@@ -30,20 +30,21 @@
 
 ## Contributing
 <!-- Write the way to contribute -->
-Thank you for your interest in contributing to Klaytn Workshop. Klaytn Workshop is always open to anyone and we welcome your contribution. 
-### How to contribute on Klaytn Workshop
+Thank you for your interest in contributing to Kaia Workshop. Kaia Workshop is always open to anyone and we welcome your contribution. 
+### How to contribute on Kaia Workshop
 1. Site scaffolding
 ```
 .
 ├── README.md
 ├── archetypes
-├── config
+├── assets
 ├── content    ====> Where contents can be updated.(Markdown)
 ├── data
 ├── layouts
 ├── resources
 ├── static
-└── themes
+├── themes
+└── hugo.toml
 ```
 2. Labaeling - [issue|typo|update|new]
 3. Branch Naming when PR - hubo/update-3-b, hugo/new-3-c 

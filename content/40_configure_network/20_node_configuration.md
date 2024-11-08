@@ -7,10 +7,10 @@ draft: false
 ---
 
 {{< line_break >}}
-#### 1. Modify network, discovery and boot node information.
+##### 1. Modify network, discovery and boot node information.
 _** Note that CN and PN have some different information._
 
-##### 1) For CN, your configuration should be modified as shown below.
+###### 1) For CN, your configuration should be modified as shown below.
 {{< highlight html >}}
 $ egrep "^NETWORK|NO_DISCOVER|BOOTNODES|ADDITIONAL" /etc/kcnd/conf/kcnd.conf
 NETWORK="baobab"
@@ -20,7 +20,7 @@ BOOTNODES="kni://979159c738bb0c8c60b36267c56d2b4d4a995326be666460c3d612856caab52
 ADDITIONAL="--state.trie-cache-limit 5000 --state.live-pruning"
 {{< /highlight >}}
 
-##### 2) For PN
+###### 2) For PN
 {{< highlight html >}}
 $ egrep "^NETWORK|NO_DISCOVER|BOOTNODES|ADDITIONAL" /etc/kpnd/conf/kpnd.conf
 NETWORK="baobab"
@@ -31,11 +31,11 @@ ADDITIONAL="--state.trie-cache-limit 5000 --state.live-pruning"
 {{< /highlight >}}
 {{< line_break >}}
 
-#### 2. Check if the static-nodes.json has correct information for your PN.
+##### 2. Check if the static-nodes.json has correct information for your PN.
 _** Unlike CN, PN uses a static-nodes.json file to find out where to connect._   
 _** If only CN information is found in the file, it is correctly configured._
 
-##### 1) For both PN1 and PN2,
+###### 1) For both PN1 and PN2,
 {{< highlight html >}}
 [
   "CN_KNI_ADDRESS@CN_INTERNAL_IP:PORT?discport=0&ntype=cn"
