@@ -7,11 +7,11 @@ draft: false
 ---
 
 {{< line_break >}}
-#### 1. To monitor your nodes in Kairos Dashboard, please change the influxdb configuration as below:
+##### 1. To monitor your nodes in Kairos Dashboard, please change the influxdb configuration as below:
 
-##### 1) For both CN and PN,
+###### 1) For both CN and PN,
 {{< highlight html >}}
-$ grep -A2 "influxdb" /etc/telegraf/telegraf.d/klaytn.conf
+$ grep -A2 "influxdb" /etc/telegraf/telegraf.d/kaia.conf
 [[outputs.influxdb]]
 urls = [ "http://15.164.55.202:8086" ]
 database = "klaytn_beta_baobab"

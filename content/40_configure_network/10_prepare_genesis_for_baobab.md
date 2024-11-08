@@ -7,14 +7,14 @@ draft: false
 ---
 
 {{< line_break >}}
-#### 1. Remove or backup existing genesis.json for Pre-cypress.
-##### 1) For CN,
+##### 1. Remove or backup existing genesis.json for Private Network.
+###### 1) For CN,
 {{< highlight html >}}
-$ mv <your_klaytn_home_path>/kcnd/data/genesis.json <your_klaytn_home_path>/kcnd/data/genesis.json.pre-cypress 
+$ mv <your_kaia_home_path>/kcnd/data/genesis.json <your_kaia_home_path>/kcnd/data/genesis.json.private-network 
 {{< /highlight >}}
-##### 2) For PN,
+###### 2) For PN,
 {{< highlight html >}}
-$ mv <your_klaytn_home_path>/kpnd/data/genesis.json <your_klaytn_home_path>/kpnd/data/genesis.json.pre-cypress
+$ mv <your_kaia_home_path>/kpnd/data/genesis.json <your_kaia_home_path>/kpnd/data/genesis.json.private-network
 {{< /highlight >}}
 {{< line_break >}}
 

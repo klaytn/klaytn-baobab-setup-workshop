@@ -8,10 +8,10 @@ draft: false
 
 {{< line_break >}}
 
-#### 2. Installation of Klaytn packages for CN and PN
-_** We've already installed packages during the Pre-cypress stage. If you need to install newly, please refer these documents._
-##### 1) CN - <https://docs.kaia.io/nodes/core-cell/install/install-consensus-nodes/>
-##### 2) PN - <https://docs.kaia.io/nodes/core-cell/install/install-proxy-nodes/>
+##### 2. Installation of Kaia packages for CN and PN
+_** We've already installed packages during the Private Network stage. If you need to install newly, please refer these documents._
+###### 1) CN - <https://docs.kaia.io/nodes/core-cell/install/install-consensus-nodes/>
+###### 2) PN - <https://docs.kaia.io/nodes/core-cell/install/install-proxy-nodes/>
 
 {{< line_break >}}
 If you finish this step, please click the next button ```>``` on the right side of this page.

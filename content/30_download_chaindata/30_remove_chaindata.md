@@ -7,9 +7,9 @@ draft: false
 ---
 
 {{< line_break >}}
-#### 3. You can remove the chaindata downloaded, if the previous step is completed.
+##### 3. You can remove the chaindata downloaded, if the previous step is completed.
 
-##### 1) For both CN and PN,
+###### 1) For both CN and PN,
 {{< highlight html >}}
 $ rm kaia-kairos-chaindata-****************.tar.gz
 {{< /highlight >}}
